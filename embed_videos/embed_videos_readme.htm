@@ -1,0 +1,21 @@
+<h2>Embed Videos Module v0.51</h2>
+<strong>Created by</strong>: AshDigg. Additional modifications by Yankidank. Based on the work by Ryan 'Dravis' Knowles http://www.PlugIM.com<br />
+<strong>Created on:</strong> 2006/12/09<br/>
+<strong>Requires:</strong> Pligg 9.0 or above 
+
+<h3>Description</h3>
+Embed videos from third party sites using simple tags. Based on the code from <a href = "http://www.pligg.com/forum/showthread.php?t=2640">here</a><br />
+
+<h3>Instructions</h3>
+Modify your HTML tags to allow <a href = "<?php echo my_pligg_base; ?>/admin_config.php?page=Submit" target="_blank">here</a>. Add this:  &#60;youtube&#62;&#60;googlevideo&#62;&#60;xoinks&#62;&lt;break&gt;&lt;vimeo&gt;&lt;revver&gt;&lt;myspace&gt;<br/>&lt;veoh&gt;&lt;wmv&gt;&lt;dailymotion&gt;&lt;ifilm&gt;&lt;metacafe&gt;&lt;tubeley&gt;&lt;guba&gt;<br />
+<strong>If you have this error:</strong><br/>
+[<code>Fatal error: TPL: [in ../modules/embed_videos/templates/link_summary_pre_story_content.tpl line 203]: syntax error: embedvideos function does not exist (class.compiler.php, line 473) in</code>]<br/>
+then you need to move the <yourpliggsite>/modules/embed_videos/plugins file(s) into <yourpliggsite>/plugins
+
+<h3>Revision History</h3>
+v0.51 - 2006/12/19 - Yankidank - Added 4 more Video sites (thanks to <a href="http://www.pligg.com/forum/showpost.php?p=13784&postcount=21">NewsKicks</a>) <br />
+v0.5 - 2006/12/19 - Yankidank - Added even more video sites and updated readme<br />
+v0.4 - 2006/12/18 - Yankidank - Added more video sites<br />
+v0.3 - 2006/12/10 - AshDigg - Fix for Xoinks JPG<br />
+v0.2 - 2006/12/10 - AshDigg - Fix for PHP 4.<br />
+v0.1 First version

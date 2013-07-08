@@ -1,0 +1,2 @@
+{config_load file=admin_totals_lang_conf}
+{config_load file=admin_pligg_totals_lang_conf}

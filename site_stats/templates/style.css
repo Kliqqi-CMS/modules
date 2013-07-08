@@ -1,0 +1,5 @@
+.story_stats_text {margin:0;padding:0;font-size:11px;}
+.story_stats_text a {text-decoration:none;}
+.story_stats {float:right;margin:0 0 5px 5px;padding:6px 10px 10px 10px;border:1px solid #ccc;background:#fff;}
+.story_stats p {margin:0;}
+.story_stats p a:hover{color:#000;}

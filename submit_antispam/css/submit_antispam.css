@@ -1,0 +1,8 @@
+.submit_error {color:#a44848;font-weight:bold;margin-top:10px;border:0px solid #a44848;background:#FFC5BE;padding:5px;width:100%;padding-left:3px;padding-right:3px}
+.submit_error_t {color:#a44848;font-weight:bold;margin-top:5px;border:0px solid #a44848;background:#ffffff;padding:5px;width:99.35%;padding-left:3px;padding-right:3px}
+.submit_confirmation {color:#018b04;font-weight:bold;margin-top:10px;border:0px solid #01fe27;background:#bdffc7;padding:5px;width:100%;padding-left:3px;padding-right:3px}
+.submit_table{line-height:1;border-collapse:collapse;margin-bottom:5px;margin-top:10px}
+.submit_table_th{background: url("../images/tab_back.png") repeat-x;color:white;
+			font-weight:bold;font-size:12pt;border:1px solid black;padding:5px 5px 5px 5px;}
+.submit_table_td{border:1px solid black;padding:5px 5px 5px 5px}	 
+.submit_table_td_selected{border:1px solid black;padding:5px 5px 5px 5px;font-weight:bold;background:#ffffc4}

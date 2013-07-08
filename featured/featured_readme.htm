@@ -1,0 +1,28 @@
+<div id="featurifyme">
+	<br />
+	<h2>Featured Module</h2>
+	Created By: &nbsp; &nbsp;&nbsp;&nbsp; Yankidank, based on Featurify by <a href="http://www.netwaver.com/?page_id=105" target="_blank">CMSTheme Labs</a><br />
+	Created On: &nbsp; &nbsp;&nbsp;&nbsp; 09/24/2009<br />
+	Last Updated:&nbsp; &nbsp; 09/24/2009<br /><br /><br />
+	<h2>Description</h2>
+	<p>This module is a hack-job based on the <a href="http://forums.pligg.com/free-modules/17798-featurify-featured-content-gallery.html">Featurify module developed by CMStheme</a>. I needed to create a way for users to easily change over "featured" articles on the homepage and the Featurify module seemed like a good starting point. If you just want to rotate images representing stories I suggest that you check out Featurify.</p>
+	<p>This module was designed to let users quickly display a featured article (or articles) on their homepage. It offers an admin area where you can add and edit articles, filling in title, description and image fields.</p>
+	<br />
+	<h2>Installation</h2>
+	Open any of your Pligg template files where you want the featured article(s) to appear and put this code in:
+	<pre style="padding:5px;background:#eee;">{$featured}</pre>
+	<br />
+	<p>I suggest that you place it on your homepage by placing it in index_center.tpl and wrapping it with the following code so that it only shows up on the homepage and not the second, third, etc. pages.</p>
+	<pre style="padding:5px;background:#eee;">{if $pagename == 'index' && count($templatelite.get) == 0}<br />and don't forget to close it with {/if}</pre>
+	<br />
+	<h2>Revision History</h2>
+	<ol>
+		<li>
+			<strong>1.0 (v10) | <em>09/25/2009</em> | <em>Yankidank</em></strong>
+			<ul>
+				<li>First public release</li>
+			</ul>
+		</li>
+	</ol>
+
+</div>

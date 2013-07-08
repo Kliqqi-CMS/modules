@@ -1,0 +1,29 @@
+<h2>Site Stats Module</h2>
+<p>
+<strong>Created by:</strong> Yankidank<br />
+<strong>Last Updated:</strong> 08/27/2009<br />
+<strong>First Created</strong>08/20/2009<br />
+<strong>Requires:</strong> cURL
+</p>
+
+<h3>Description</h3>
+<p>This module uses cURL to connect to 3 separate websites to gather stats about stories on your site. If a story set up a source URL in step 1 of submission this module will activate and display the following stats on the story page:</p>
+<ul>
+	<li>Google Pagerank - This stat will sometimes return a negative number or no result, in that case it is hidden from view</li>
+	<li>Alexa Rank</li>
+	<li>Domain creation date, according to Alexa.com</li>
+	<li>Number of Google indexed pages</li>
+	<li>Number of Incoming links, according to Google</li>
+	<li>Estimated unique visitors a month, according to Compete.com</li>
+	<li>Estimated total visits a month, according to Compete.com</li>
+</ul>
+<p>This module will automatically embed itself into the story page and float to the right of the story content area. Edit the /templates/style.css file for this module to adjust the positioning or site_stats_init.php to use another module hook.</p>
+<p>One last note is that this module WILL SLOW the load time of your story pages. There is no caching built into this module, so every time that the a page is requested that uses this module (the story page) it tries to connect to 3 different websites for the statistics. For best results you should either remove some portions of this module to reduce the number of pages it connects to, or you could build a cache feature so that it doesn't need to request stats on every page load.</p>
+
+<h3>Revision History</h3>
+<p>
+<ul>
+	<li>v0.2 08/27/2009 - Fixed bug when Compete.com doesn't have any data for a domain</li>
+	<li>v0.1 08/20/2009 - First version</li>
+</ul>
+</p>

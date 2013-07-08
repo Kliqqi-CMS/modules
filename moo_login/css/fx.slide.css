@@ -1,0 +1,252 @@
+/*
+Name: Nice Login and Signup Panel using Mootools 1.2
+Tutorial URI: http://web-kreation.com/demos/login_form_mootools_1.2/
+Author: Jeremie Tisseau
+Author URI: http://web-kreation.com/
+Date: August 2008
+
+	The CSS, XHTML and design is released under Creative Common License 2.5:
+	http://creativecommons.org/licenses/by-sa/2.5/
+
+*/
+
+/* Login Panel */
+#top {
+  	background: url(../images/login_top.jpg) repeat-x 0 0;
+	height: 38px;
+	position: relative;
+}
+
+#top ul.login {
+	display: block;
+	position: relative;
+  	float: right;
+  	clear: right;
+  	height: 38px;
+	width: auto;
+  	font-weight: bold;
+	line-height: 38px;
+	margin: 0;
+	right: 150px;
+  	color: white;
+  	font-size: 80%;
+	text-align: center;
+  	background: url(../images/login_r.gif) no-repeat right 0;
+	padding-right: 45px;
+}
+
+#top ul.login li.left {
+  	background: url(../images/login_l.gif) no-repeat left 0;
+  	height: 38px;
+	width: 45px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+
+#top ul.login li {
+ 	text-align: left;
+  	padding: 0 6px;
+	display: block;
+	float: left;
+	height: 38px;
+  	background: url(../images/login_m.jpg) repeat-x 0 0;
+}
+
+#top ul.login li a {
+	color: #33CCCC;
+}
+
+#top ul.login li a:hover {
+	color: white;
+}
+/*Login*/
+/* toggle effect - show/hide login*/
+#login {
+	width: 100%;
+	color: white;
+	background: #1E1E1E;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	height: 0;
+}
+
+#login a {
+	text-decoration: none;
+	color: #33CCCC;
+}
+
+#login a:hover {
+	color: white;
+}
+
+#login .loginContent {
+	width: 550px;
+	height: 80px;
+	margin: 0 auto;
+	padding-top: 25px;
+	text-align: left;
+	font-size: 1em;
+}
+
+#login .loginContent .left {
+	float: left;
+	padding: 5px;
+	font-size: 1em;
+}
+
+#login .loginContent form {
+	margin: 0 0 10px 0;
+	height: 26px;
+}
+
+#login .loginContent input.field {
+	border: 1px #1A1A1A solid;
+	background: #464646;
+	margin-right: 5px;
+	margin-top: 4px;
+	color: white;
+	height: 16px;
+}
+
+#login .loginContent input:focus.field {
+	background: #545454;
+}
+
+#login .loginContent input.rememberme {
+	border: none;
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}
+
+#login .loginContent input.button_login {
+	width: 47px;
+	height: 20px;
+	cursor: pointer;
+	border: none;
+	background: transparent url(../images/button_login.jpg) no-repeat 0 0;
+}
+
+#login .loginClose {
+	display: block;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	width: 70px;
+	font-size: 0.8em;
+	text-align: left;
+}
+
+#login .loginClose a {
+	display: block;
+	width: 100%;
+	height: 20px;
+	background: url(../images/button_close.jpg) no-repeat right 0;
+	padding-right: 10px;
+	border: none;
+	font-size: 0.9em;
+	color: white;
+}
+
+#login .loginClose a:hover {
+	background: url(../images/button_close.jpg) no-repeat right -20px;
+}
+
+/*Search*/
+/* toggle effect - show/hide search*/
+#search {
+	width: 100%;
+	color: white;
+	background: #1E1E1E;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	height: 0;
+}
+
+#search a {
+	text-decoration: none;
+	color: #33CCCC;
+}
+
+#search a:hover {
+	color: white;
+}
+
+#search .searchContent {
+	width: 290px;
+	height: 80px;
+	margin: 0 auto;
+	padding-top: 25px;
+	text-align: left;
+	font-size: 0.85em;
+}
+
+#search .searchContent .left {
+	width: 120px;
+	float: left;
+	padding-left: 65px;
+	font-size: 0.95em;
+}
+
+#search .searchContent .right {
+	width: 290px;
+	float: right;
+	text-align: right;
+	padding-right: 65px;
+	font-size: 0.95em;
+}
+
+#search .searchContent form {
+	margin: 0 0 10px 0;
+	height: 26px;
+}
+
+#search .searchContent input.field {
+	border: 1px #1A1A1A solid;
+	background: #464646;
+	margin-right: 5px;
+	margin-top: 4px;
+	color: white;
+	height: 16px;
+}
+
+#search .searchContent input:focus.field {
+	background: #545454;
+}
+
+#search .searchContent input.button_search {
+	width: 57px;
+	height: 20px;
+	cursor: pointer;
+	border: none;
+	background: transparent url(../images/button_search.jpg) no-repeat 0 0;
+}
+
+#search .searchClose {
+	display: block;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	width: 70px;
+	font-size: 0.8em;
+	text-align: left;
+}
+
+#search .searchClose a {
+	display: block;
+	width: 100%;
+	height: 20px;
+	background: url(../images/button_close.jpg) no-repeat right 0;
+	padding-right: 10px;
+	border: none;
+	font-size: 0.9em;
+	color: white;
+}
+
+#login .searchClose a:hover {
+	background: url(../images/button_close.jpg) no-repeat right -20px;
+}

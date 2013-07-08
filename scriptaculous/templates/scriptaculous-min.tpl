@@ -1,0 +1,9 @@
+<script src="./modules/scriptaculous/js/prototype-min.js" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/scriptaculous-min.js" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/builder-min.js" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/controls-min.js" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/dragdrop-min.js" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/EditInPlace-min.js" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/effects-min.js" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/slider-min.js" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/sound-min.js" type="text/javascript"></script>

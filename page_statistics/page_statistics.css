@@ -1,0 +1,45 @@
+/* CSS Document */
+
+/* statistics */
+
+.statistics {
+	margin: 10px 10px 10px 10px;	
+	background-position: bottom right;
+}
+
+.statistics strong {
+	font-size: 95%;
+	color: #c00;
+}
+
+.statistics-item {
+	width: 100%;
+	clear: both;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 2px 0px 2px;
+	min-height: 25px;
+	text-align: center;	
+}
+
+.statistics-title, .statistics-pid, .statistics-views{
+	float: left;
+	display: block;
+	margin-left:10px;
+}
+
+.statistics-title {
+	width: 50%;
+	text-align:left;
+}
+
+.statistics-pid {
+	width: 10%;
+    text-align:right;
+}
+
+.statistics-views {
+	width: 10%;
+    text-align:right;
+}
+
+

@@ -1,0 +1,655 @@
+To use for the States/Provinces
+
+<select  name="{$users_extra_fields_field[fields].name}" id="{$users_extra_fields_field[fields].name}">
+	<option value='' {if $users_extra_fields_field[fields].value eq ""} selected="selected"{/if}>Select a State/Province</option>
+	<option value='Alabama' {if $users_extra_fields_field[fields].value eq "Alabama"} selected="selected"{/if}>Alabama</option>
+	<option value='Alaska' {if $users_extra_fields_field[fields].value eq "Alaska"} selected="selected"{/if}>Alaska</option>
+	<option value='Arizona' {if $users_extra_fields_field[fields].value eq "Arizona"} selected="selected"{/if}>Arizona</option>
+	<option value='Arkansas' {if $users_extra_fields_field[fields].value eq "Arkansas"} selected="selected"{/if}>Arkansas</option>
+	<option value='California' {if $users_extra_fields_field[fields].value eq "California"} selected="selected"{/if}>California</option>
+	<option value='Colorado' {if $users_extra_fields_field[fields].value eq "Colorado"} selected="selected"{/if}>Colorado</option>
+	<option value='Connecticut' {if $users_extra_fields_field[fields].value eq "Connecticut"} selected="selected"{/if}>Connecticut</option>
+	<option value='Delaware' {if $users_extra_fields_field[fields].value eq "Delaware"} selected="selected"{/if}>Delaware</option>
+	<option value='District of Columbia' {if $users_extra_fields_field[fields].value eq "District of Columbia"} selected="selected"{/if}>District of Columbia</option>
+	<option value='Florida' {if $users_extra_fields_field[fields].value eq "Florida"} selected="selected"{/if}>Florida</option>
+	<option value='Georgia' {if $users_extra_fields_field[fields].value eq "Georgia"} selected="selected"{/if}>Georgia</option>
+	<option value='Hawaii' {if $users_extra_fields_field[fields].value eq "Hawaii"} selected="selected"{/if}>Hawaii</option>
+	<option value='Idaho' {if $users_extra_fields_field[fields].value eq "Idaho"} selected="selected"{/if}>Idaho</option>
+	<option value='Illinois' {if $users_extra_fields_field[fields].value eq "Illinois"} selected="selected"{/if}>Illinois</option>
+	<option value='Indiana' {if $users_extra_fields_field[fields].value eq "Indiana"} selected="selected"{/if}>Indiana</option>
+	<option value='Iowa' {if $users_extra_fields_field[fields].value eq "Iowa"} selected="selected"{/if}>Iowa</option>
+	<option value='Kansas' {if $users_extra_fields_field[fields].value eq "Kansas"} selected="selected"{/if}>Kansas</option>
+	<option value='Kentucky' {if $users_extra_fields_field[fields].value eq "Kentucky"} selected="selected"{/if}>Kentucky</option>
+	<option value='Louisiana' {if $users_extra_fields_field[fields].value eq "Louisiana"} selected="selected"{/if}>Louisiana</option>
+	<option value='Maine' {if $users_extra_fields_field[fields].value eq "Maine"} selected="selected"{/if}>Maine</option>
+	<option value='Maryland' {if $users_extra_fields_field[fields].value eq "Maryland"} selected="selected"{/if}>Maryland</option>
+	<option value='Massachusetts' {if $users_extra_fields_field[fields].value eq "Massachusetts"} selected="selected"{/if}>Massachusetts</option>
+	<option value='Michigan' {if $users_extra_fields_field[fields].value eq "Michigan"} selected="selected"{/if}>Michigan</option>
+	<option value='Minnesota' {if $users_extra_fields_field[fields].value eq "Minnesota"} selected="selected"{/if}>Minnesota</option>
+	<option value='Mississippi' {if $users_extra_fields_field[fields].value eq "Mississippi"} selected="selected"{/if}>Mississippi</option>
+	<option value='Missouri' {if $users_extra_fields_field[fields].value eq "Missouri"} selected="selected"{/if}>Missouri</option>
+	<option value='Montana' {if $users_extra_fields_field[fields].value eq "Montana"} selected="selected"{/if}>Montana</option>
+	<option value='Nebraska' {if $users_extra_fields_field[fields].value eq "Nebraska"} selected="selected"{/if}>Nebraska</option>
+	<option value='Nevada' {if $users_extra_fields_field[fields].value eq "Nevada"} selected="selected"{/if}>Nevada</option>
+	<option value='New Hampshire' {if $users_extra_fields_field[fields].value eq "New Hampshire"} selected="selected"{/if}>New Hampshire</option>
+	<option value='New Jersey' {if $users_extra_fields_field[fields].value eq "New Jersey"} selected="selected"{/if}>New Jersey</option>
+	<option value='New Mexico' {if $users_extra_fields_field[fields].value eq "New Mexico"} selected="selected"{/if}>New Mexico</option>
+	<option value='New York' {if $users_extra_fields_field[fields].value eq "New York"} selected="selected"{/if}>New York</option>
+	<option value='North Carolina' {if $users_extra_fields_field[fields].value eq "North Carolina"} selected="selected"{/if}>North Carolina</option>
+	<option value='North Dakota' {if $users_extra_fields_field[fields].value eq "North Dakota"} selected="selected"{/if}>North Dakota</option>
+	<option value='Ohio' {if $users_extra_fields_field[fields].value eq "Ohio"} selected="selected"{/if}>Ohio</option>
+	<option value='Oklahoma' {if $users_extra_fields_field[fields].value eq "Oklahoma"} selected="selected"{/if}>Oklahoma</option>
+	<option value='Oregon' {if $users_extra_fields_field[fields].value eq "Oregon"} selected="selected"{/if}>Oregon</option>
+	<option value='Pennsylvania' {if $users_extra_fields_field[fields].value eq "Pennsylvania"} selected="selected"{/if}>Pennsylvania</option>
+	<option value='Rhode Island' {if $users_extra_fields_field[fields].value eq "Rhode Island"} selected="selected"{/if}>Rhode Island</option>
+	<option value='South Carolina' {if $users_extra_fields_field[fields].value eq "South Carolina"} selected="selected"{/if}>South Carolina</option>
+	<option value='South Dakota' {if $users_extra_fields_field[fields].value eq "South Dakota"} selected="selected"{/if}>South Dakota</option>
+	<option value='Tennessee' {if $users_extra_fields_field[fields].value eq "Tennessee"} selected="selected"{/if}>Tennessee</option>
+	<option value='Texas' {if $users_extra_fields_field[fields].value eq "Texas"} selected="selected"{/if}>Texas</option>
+	<option value='Utah' {if $users_extra_fields_field[fields].value eq "Utah"} selected="selected"{/if}>Utah</option>
+	<option value='Vermont' {if $users_extra_fields_field[fields].value eq "Vermont"} selected="selected"{/if}>Vermont</option>
+	<option value='Virginia' {if $users_extra_fields_field[fields].value eq "Virginia"} selected="selected"{/if}>Virginia</option>
+	<option value='Washington' {if $users_extra_fields_field[fields].value eq "Washington"} selected="selected"{/if}>Washington</option>
+	<option value='West Virginia' {if $users_extra_fields_field[fields].value eq "West Virginia"} selected="selected"{/if}>West Virginia</option>
+	<option value='Wisconsin' {if $users_extra_fields_field[fields].value eq "Wisconsin"} selected="selected"{/if}>Wisconsin</option>
+	<option value='Wyoming' {if $users_extra_fields_field[fields].value eq "Wyoming"} selected="selected"{/if}>Wyoming</option>
+	<option value='Alberta' {if $users_extra_fields_field[fields].value eq "Alberta"} selected="selected"{/if}>Alberta</option>
+	<option value='British Columbia' {if $users_extra_fields_field[fields].value eq "British Columbia"} selected="selected"{/if}>British Columbia</option>
+	<option value='Manitoba' {if $users_extra_fields_field[fields].value eq "Manitoba"} selected="selected"{/if}>Manitoba</option>
+	<option value='New Brunswick' {if $users_extra_fields_field[fields].value eq "New Brunswick"} selected="selected"{/if}>New Brunswick</option>
+	<option value='Newfoundland and Labrador' {if $users_extra_fields_field[fields].value eq "Newfoundland and Labrador"} selected="selected"{/if}>Newfoundland and Labrador</option>
+	<option value='Northwest Territories' {if $users_extra_fields_field[fields].value eq "Northwest Territories"} selected="selected"{/if}>Northwest Territories</option>
+	<option value='Nova Scotia' {if $users_extra_fields_field[fields].value eq "Nova Scotia"} selected="selected"{/if}>Nova Scotia</option>
+	<option value='Nunavut' {if $users_extra_fields_field[fields].value eq "Nunavut"} selected="selected"{/if}>Nunavut</option>
+	<option value='Ontario' {if $users_extra_fields_field[fields].value eq "Ontario"} selected="selected"{/if}>Ontario</option>
+	<option value='Prince Edward Island' {if $users_extra_fields_field[fields].value eq "Prince Edward Island"} selected="selected"{/if}>Prince Edward Island</option>
+	<option value='Quebec' {if $users_extra_fields_field[fields].value eq "Quebec"} selected="selected"{/if}>Quebec</option>
+	<option value='Saskatchewan' {if $users_extra_fields_field[fields].value eq "Saskatchewan"} selected="selected"{/if}>Saskatchewan</option>
+	<option value='Yukon' {if $users_extra_fields_field[fields].value eq "Yukon"} selected="selected"{/if}>Yukon</option>
+</select>
+
+To use for all the countries
+
+<select  name="{$users_extra_fields_field[fields].name}" id="{$users_extra_fields_field[fields].name}">
+	<option value='' {if $users_extra_fields_field[fields].value eq ""} selected="selected"{/if}>Select a Country</option>
+	<option value='Abkhazia' {if $users_extra_fields_field[fields].value eq "Abkhazia"} selected="selected"{/if}>Abkhazia</option>
+	<option value='Afghanistan' {if $users_extra_fields_field[fields].value eq "Afghanistan"} selected="selected"{/if}>Afghanistan</option>
+	<option value='Akrotiri and Dhekelia' {if $users_extra_fields_field[fields].value eq "Akrotiri and Dhekelia"} selected="selected"{/if}>Akrotiri and Dhekelia</option>
+	<option value='Aland' {if $users_extra_fields_field[fields].value eq "Aland"} selected="selected"{/if}>Aland</option>
+	<option value='Albania' {if $users_extra_fields_field[fields].value eq "Albania"} selected="selected"{/if}>Albania</option>
+	<option value='Algeria' {if $users_extra_fields_field[fields].value eq "Algeria"} selected="selected"{/if}>Algeria</option>
+	<option value='American Samoa' {if $users_extra_fields_field[fields].value eq "American Samoa"} selected="selected"{/if}>American Samoa</option>
+	<option value='Andorra' {if $users_extra_fields_field[fields].value eq "Andorra"} selected="selected"{/if}>Andorra</option>
+	<option value='Angola' {if $users_extra_fields_field[fields].value eq "Angola"} selected="selected"{/if}>Angola</option>
+	<option value='Anguilla' {if $users_extra_fields_field[fields].value eq "Anguilla"} selected="selected"{/if}>Anguilla</option>
+	<option value='Antigua and Barbuda' {if $users_extra_fields_field[fields].value eq "Antigua and Barbuda"} selected="selected"{/if}>Antigua and Barbuda</option>
+	<option value='Argentina' {if $users_extra_fields_field[fields].value eq "Argentina"} selected="selected"{/if}>Argentina</option>
+	<option value='Armenia' {if $users_extra_fields_field[fields].value eq "Armenia"} selected="selected"{/if}>Armenia</option>
+	<option value='Aruba' {if $users_extra_fields_field[fields].value eq "Aruba"} selected="selected"{/if}>Aruba</option>
+	<option value='Ascension Island' {if $users_extra_fields_field[fields].value eq "Ascension Island"} selected="selected"{/if}>Ascension Island</option>
+	<option value='Australia' {if $users_extra_fields_field[fields].value eq "Australia"} selected="selected"{/if}>Australia</option>
+	<option value='Austria' {if $users_extra_fields_field[fields].value eq "Austria"} selected="selected"{/if}>Austria</option>
+	<option value='Azerbaijan' {if $users_extra_fields_field[fields].value eq "Azerbaijan"} selected="selected"{/if}>Azerbaijan</option>
+	<option value='Bahamas, The' {if $users_extra_fields_field[fields].value eq "Bahamas, The"} selected="selected"{/if}>Bahamas, The</option>
+	<option value='Bahrain' {if $users_extra_fields_field[fields].value eq "Bahrain"} selected="selected"{/if}>Bahrain</option>
+	<option value='Bangladesh' {if $users_extra_fields_field[fields].value eq "Bangladesh"} selected="selected"{/if}>Bangladesh</option>
+	<option value='Barbados' {if $users_extra_fields_field[fields].value eq "Barbados"} selected="selected"{/if}>Barbados</option>
+	<option value='Belarus' {if $users_extra_fields_field[fields].value eq "Belarus"} selected="selected"{/if}>Belarus</option>
+	<option value='Belgium' {if $users_extra_fields_field[fields].value eq "Belgium"} selected="selected"{/if}>Belgium</option>
+	<option value='Belize' {if $users_extra_fields_field[fields].value eq "Belize"} selected="selected"{/if}>Belize</option>
+	<option value='Benin' {if $users_extra_fields_field[fields].value eq "Benin"} selected="selected"{/if}>Benin</option>
+	<option value='Bermuda' {if $users_extra_fields_field[fields].value eq "Bermuda"} selected="selected"{/if}>Bermuda</option>
+	<option value='Bhutan' {if $users_extra_fields_field[fields].value eq "Bhutan"} selected="selected"{/if}>Bhutan</option>
+	<option value='Bolivia' {if $users_extra_fields_field[fields].value eq "Bolivia"} selected="selected"{/if}>Bolivia</option>
+	<option value='Bosnia and Herzegovina' {if $users_extra_fields_field[fields].value eq "Bosnia and Herzegovina"} selected="selected"{/if}>Bosnia and Herzegovina</option>
+	<option value='Botswana' {if $users_extra_fields_field[fields].value eq "Botswana"} selected="selected"{/if}>Botswana</option>
+	<option value='Brazil' {if $users_extra_fields_field[fields].value eq "Brazil"} selected="selected"{/if}>Brazil</option>
+	<option value='Brunei' {if $users_extra_fields_field[fields].value eq "Brunei"} selected="selected"{/if}>Brunei</option>
+	<option value='Bulgaria' {if $users_extra_fields_field[fields].value eq "Bulgaria"} selected="selected"{/if}>Bulgaria</option>
+	<option value='Burkina Faso' {if $users_extra_fields_field[fields].value eq "Burkina Faso"} selected="selected"{/if}>Burkina Faso</option>
+	<option value='Burma' {if $users_extra_fields_field[fields].value eq "Burma"} selected="selected"{/if}>Burma</option>
+	<option value='Burundi' {if $users_extra_fields_field[fields].value eq "Burundi"} selected="selected"{/if}>Burundi</option>
+	<option value='Cambodia' {if $users_extra_fields_field[fields].value eq "Cambodia"} selected="selected"{/if}>Cambodia</option>
+	<option value='Cameroon' {if $users_extra_fields_field[fields].value eq "Cameroon"} selected="selected"{/if}>Cameroon</option>
+	<option value='Canada' {if $users_extra_fields_field[fields].value eq "Canada"} selected="selected"{/if}>Canada</option>
+	<option value='Cape Verde' {if $users_extra_fields_field[fields].value eq "Cape Verde"} selected="selected"{/if}>Cape Verde</option>
+	<option value='Cayman Islands' {if $users_extra_fields_field[fields].value eq "Cayman Islands"} selected="selected"{/if}>Cayman Islands</option>
+	<option value='Central African Republic' {if $users_extra_fields_field[fields].value eq "Central African Republic"} selected="selected"{/if}>Central African Republic</option>
+	<option value='Chad' {if $users_extra_fields_field[fields].value eq "Chad"} selected="selected"{/if}>Chad</option>
+	<option value='Chile' {if $users_extra_fields_field[fields].value eq "Chile"} selected="selected"{/if}>Chile</option>
+	<option value='China' {if $users_extra_fields_field[fields].value eq "China"} selected="selected"{/if}>China</option>
+	<option value='Christmas Island' {if $users_extra_fields_field[fields].value eq "Christmas Island"} selected="selected"{/if}>Christmas Island</option>
+	<option value='Cocos (Keeling) Islands' {if $users_extra_fields_field[fields].value eq "Cocos (Keeling) Islands"} selected="selected"{/if}>Cocos (Keeling) Islands</option>
+	<option value='Colombia' {if $users_extra_fields_field[fields].value eq "Colombia"} selected="selected"{/if}>Colombia</option>
+	<option value='Comoros' {if $users_extra_fields_field[fields].value eq "Comoros"} selected="selected"{/if}>Comoros</option>
+	<option value='Congo' {if $users_extra_fields_field[fields].value eq "Congo"} selected="selected"{/if}>Congo</option>
+	<option value='Congo' {if $users_extra_fields_field[fields].value eq "Congo"} selected="selected"{/if}>Congo</option>
+	<option value='Cook Islands' {if $users_extra_fields_field[fields].value eq "Cook Islands"} selected="selected"{/if}>Cook Islands</option>
+	<option value='Costa Rica' {if $users_extra_fields_field[fields].value eq "Costa Rica"} selected="selected"{/if}>Costa Rica</option>
+	<option value='Côte d'Ivoire' {if $users_extra_fields_field[fields].value eq "Côte d'Ivoire"} selected="selected"{/if}>Côte d'Ivoire</option>
+	<option value='Croatia' {if $users_extra_fields_field[fields].value eq "Croatia"} selected="selected"{/if}>Croatia</option>
+	<option value='Cuba' {if $users_extra_fields_field[fields].value eq "Cuba"} selected="selected"{/if}>Cuba</option>
+	<option value='Cyprus' {if $users_extra_fields_field[fields].value eq "Cyprus"} selected="selected"{/if}>Cyprus</option>
+	<option value='Czech Republic' {if $users_extra_fields_field[fields].value eq "Czech Republic"} selected="selected"{/if}>Czech Republic</option>
+	<option value='Denmark' {if $users_extra_fields_field[fields].value eq "Denmark"} selected="selected"{/if}>Denmark</option>
+	<option value='Djibouti' {if $users_extra_fields_field[fields].value eq "Djibouti"} selected="selected"{/if}>Djibouti</option>
+	<option value='Dominica' {if $users_extra_fields_field[fields].value eq "Dominica"} selected="selected"{/if}>Dominica</option>
+	<option value='Dominican Republic' {if $users_extra_fields_field[fields].value eq "Dominican Republic"} selected="selected"{/if}>Dominican Republic</option>
+	<option value='East Timor' {if $users_extra_fields_field[fields].value eq "East Timor"} selected="selected"{/if}>East Timor</option>
+	<option value='Ecuador' {if $users_extra_fields_field[fields].value eq "Ecuador"} selected="selected"{/if}>Ecuador</option>
+	<option value='Egypt' {if $users_extra_fields_field[fields].value eq "Egypt"} selected="selected"{/if}>Egypt</option>
+	<option value='El Salvador' {if $users_extra_fields_field[fields].value eq "El Salvador"} selected="selected"{/if}>El Salvador</option>
+	<option value='Equatorial Guinea' {if $users_extra_fields_field[fields].value eq "Equatorial Guinea"} selected="selected"{/if}>Equatorial Guinea</option>
+	<option value='Eritrea' {if $users_extra_fields_field[fields].value eq "Eritrea"} selected="selected"{/if}>Eritrea</option>
+	<option value='Estonia' {if $users_extra_fields_field[fields].value eq "Estonia"} selected="selected"{/if}>Estonia</option>
+	<option value='Ethiopia' {if $users_extra_fields_field[fields].value eq "Ethiopia"} selected="selected"{/if}>Ethiopia</option>
+	<option value='Falkland Islands' {if $users_extra_fields_field[fields].value eq "Falkland Islands"} selected="selected"{/if}>Falkland Islands</option>
+	<option value='Faroe Islands' {if $users_extra_fields_field[fields].value eq "Faroe Islands"} selected="selected"{/if}>Faroe Islands</option>
+	<option value='Fiji' {if $users_extra_fields_field[fields].value eq "Fiji"} selected="selected"{/if}>Fiji</option>
+	<option value='Finland' {if $users_extra_fields_field[fields].value eq "Finland"} selected="selected"{/if}>Finland</option>
+	<option value='France' {if $users_extra_fields_field[fields].value eq "France"} selected="selected"{/if}>France</option>
+	<option value='French Polynesia' {if $users_extra_fields_field[fields].value eq "French Polynesia"} selected="selected"{/if}>French Polynesia</option>
+	<option value='Gabon' {if $users_extra_fields_field[fields].value eq "Gabon"} selected="selected"{/if}>Gabon</option>
+	<option value='Gambia' {if $users_extra_fields_field[fields].value eq "Gambia"} selected="selected"{/if}>Gambia</option>
+	<option value='Georgia' {if $users_extra_fields_field[fields].value eq "Georgia"} selected="selected"{/if}>Georgia</option>
+	<option value='Germany' {if $users_extra_fields_field[fields].value eq "Germany"} selected="selected"{/if}>Germany</option>
+	<option value='Ghana' {if $users_extra_fields_field[fields].value eq "Ghana"} selected="selected"{/if}>Ghana</option>
+	<option value='Gibraltar' {if $users_extra_fields_field[fields].value eq "Gibraltar"} selected="selected"{/if}>Gibraltar</option>
+	<option value='Greece' {if $users_extra_fields_field[fields].value eq "Greece"} selected="selected"{/if}>Greece</option>
+	<option value='Greenland' {if $users_extra_fields_field[fields].value eq "Greenland"} selected="selected"{/if}>Greenland</option>
+	<option value='Grenada' {if $users_extra_fields_field[fields].value eq "Grenada"} selected="selected"{/if}>Grenada</option>
+	<option value='Guam' {if $users_extra_fields_field[fields].value eq "Guam"} selected="selected"{/if}>Guam</option>
+	<option value='Guatemala' {if $users_extra_fields_field[fields].value eq "Guatemala"} selected="selected"{/if}>Guatemala</option>
+	<option value='Guernsey' {if $users_extra_fields_field[fields].value eq "Guernsey"} selected="selected"{/if}>Guernsey</option>
+	<option value='Guinea' {if $users_extra_fields_field[fields].value eq "Guinea"} selected="selected"{/if}>Guinea</option>
+	<option value='Guinea' {if $users_extra_fields_field[fields].value eq "Guinea"} selected="selected"{/if}>Guinea</option>
+	<option value='Guyana' {if $users_extra_fields_field[fields].value eq "Guyana"} selected="selected"{/if}>Guyana</option>
+	<option value='Haiti' {if $users_extra_fields_field[fields].value eq "Haiti"} selected="selected"{/if}>Haiti</option>
+	<option value='Honduras' {if $users_extra_fields_field[fields].value eq "Honduras"} selected="selected"{/if}>Honduras</option>
+	<option value='Hong Kong' {if $users_extra_fields_field[fields].value eq "Hong Kong"} selected="selected"{/if}>Hong Kong</option>
+	<option value='Hungary' {if $users_extra_fields_field[fields].value eq "Hungary"} selected="selected"{/if}>Hungary</option>
+	<option value='Iceland' {if $users_extra_fields_field[fields].value eq "Iceland"} selected="selected"{/if}>Iceland</option>
+	<option value='India' {if $users_extra_fields_field[fields].value eq "India"} selected="selected"{/if}>India</option>
+	<option value='Indonesia' {if $users_extra_fields_field[fields].value eq "Indonesia"} selected="selected"{/if}>Indonesia</option>
+	<option value='Iran' {if $users_extra_fields_field[fields].value eq "Iran"} selected="selected"{/if}>Iran</option>
+	<option value='Iraq' {if $users_extra_fields_field[fields].value eq "Iraq"} selected="selected"{/if}>Iraq</option>
+	<option value='Ireland' {if $users_extra_fields_field[fields].value eq "Ireland"} selected="selected"{/if}>Ireland</option>
+	<option value='Isle of Man' {if $users_extra_fields_field[fields].value eq "Isle of Man"} selected="selected"{/if}>Isle of Man</option>
+	<option value='Israel' {if $users_extra_fields_field[fields].value eq "Israel"} selected="selected"{/if}>Israel</option>
+	<option value='Italy' {if $users_extra_fields_field[fields].value eq "Italy"} selected="selected"{/if}>Italy</option>
+	<option value='Jamaica' {if $users_extra_fields_field[fields].value eq "Jamaica"} selected="selected"{/if}>Jamaica</option>
+	<option value='Japan' {if $users_extra_fields_field[fields].value eq "Japan"} selected="selected"{/if}>Japan</option>
+	<option value='Jersey' {if $users_extra_fields_field[fields].value eq "Jersey"} selected="selected"{/if}>Jersey</option>
+	<option value='Jordan' {if $users_extra_fields_field[fields].value eq "Jordan"} selected="selected"{/if}>Jordan</option>
+	<option value='Kazakhstan' {if $users_extra_fields_field[fields].value eq "Kazakhstan"} selected="selected"{/if}>Kazakhstan</option>
+	<option value='Kenya' {if $users_extra_fields_field[fields].value eq "Kenya"} selected="selected"{/if}>Kenya</option>
+	<option value='Kiribati' {if $users_extra_fields_field[fields].value eq "Kiribati"} selected="selected"{/if}>Kiribati</option>
+	<option value='Korea, North' {if $users_extra_fields_field[fields].value eq "Korea, North"} selected="selected"{/if}>Korea, North</option>
+	<option value='Korea, South' {if $users_extra_fields_field[fields].value eq "Korea, South"} selected="selected"{/if}>Korea, South</option>
+	<option value='Kosovo' {if $users_extra_fields_field[fields].value eq "Kosovo"} selected="selected"{/if}>Kosovo</option>
+	<option value='Kuwait' {if $users_extra_fields_field[fields].value eq "Kuwait"} selected="selected"{/if}>Kuwait</option>
+	<option value='Kyrgyzstan' {if $users_extra_fields_field[fields].value eq "Kyrgyzstan"} selected="selected"{/if}>Kyrgyzstan</option>
+	<option value='Laos' {if $users_extra_fields_field[fields].value eq "Laos"} selected="selected"{/if}>Laos</option>
+	<option value='Latvia' {if $users_extra_fields_field[fields].value eq "Latvia"} selected="selected"{/if}>Latvia</option>
+	<option value='Lebanon' {if $users_extra_fields_field[fields].value eq "Lebanon"} selected="selected"{/if}>Lebanon</option>
+	<option value='Lesotho' {if $users_extra_fields_field[fields].value eq "Lesotho"} selected="selected"{/if}>Lesotho</option>
+	<option value='Liberia' {if $users_extra_fields_field[fields].value eq "Liberia"} selected="selected"{/if}>Liberia</option>
+	<option value='Libya' {if $users_extra_fields_field[fields].value eq "Libya"} selected="selected"{/if}>Libya</option>
+	<option value='Liechtenstein' {if $users_extra_fields_field[fields].value eq "Liechtenstein"} selected="selected"{/if}>Liechtenstein</option>
+	<option value='Lithuania' {if $users_extra_fields_field[fields].value eq "Lithuania"} selected="selected"{/if}>Lithuania</option>
+	<option value='Luxembourg' {if $users_extra_fields_field[fields].value eq "Luxembourg"} selected="selected"{/if}>Luxembourg</option>
+	<option value='Macao' {if $users_extra_fields_field[fields].value eq "Macao"} selected="selected"{/if}>Macao</option>
+	<option value='Macedonia' {if $users_extra_fields_field[fields].value eq "Macedonia"} selected="selected"{/if}>Macedonia</option>
+	<option value='Madagascar' {if $users_extra_fields_field[fields].value eq "Madagascar"} selected="selected"{/if}>Madagascar</option>
+	<option value='Malawi' {if $users_extra_fields_field[fields].value eq "Malawi"} selected="selected"{/if}>Malawi</option>
+	<option value='Malaysia' {if $users_extra_fields_field[fields].value eq "Malaysia"} selected="selected"{/if}>Malaysia</option>
+	<option value='Maldives' {if $users_extra_fields_field[fields].value eq "Maldives"} selected="selected"{/if}>Maldives</option>
+	<option value='Mali' {if $users_extra_fields_field[fields].value eq "Mali"} selected="selected"{/if}>Mali</option>
+	<option value='Malta' {if $users_extra_fields_field[fields].value eq "Malta"} selected="selected"{/if}>Malta</option>
+	<option value='Marshall Islands' {if $users_extra_fields_field[fields].value eq "Marshall Islands"} selected="selected"{/if}>Marshall Islands</option>
+	<option value='Mauritania' {if $users_extra_fields_field[fields].value eq "Mauritania"} selected="selected"{/if}>Mauritania</option>
+	<option value='Mauritius' {if $users_extra_fields_field[fields].value eq "Mauritius"} selected="selected"{/if}>Mauritius</option>
+	<option value='Mayotte' {if $users_extra_fields_field[fields].value eq "Mayotte"} selected="selected"{/if}>Mayotte</option>
+	<option value='Mexico' {if $users_extra_fields_field[fields].value eq "Mexico"} selected="selected"{/if}>Mexico</option>
+	<option value='Micronesia' {if $users_extra_fields_field[fields].value eq "Micronesia"} selected="selected"{/if}>Micronesia</option>
+	<option value='Moldova' {if $users_extra_fields_field[fields].value eq "Moldova"} selected="selected"{/if}>Moldova</option>
+	<option value='Monaco' {if $users_extra_fields_field[fields].value eq "Monaco"} selected="selected"{/if}>Monaco</option>
+	<option value='Mongolia' {if $users_extra_fields_field[fields].value eq "Mongolia"} selected="selected"{/if}>Mongolia</option>
+	<option value='Montenegro' {if $users_extra_fields_field[fields].value eq "Montenegro"} selected="selected"{/if}>Montenegro</option>
+	<option value='Montserrat' {if $users_extra_fields_field[fields].value eq "Montserrat"} selected="selected"{/if}>Montserrat</option>
+	<option value='Morocco' {if $users_extra_fields_field[fields].value eq "Morocco"} selected="selected"{/if}>Morocco</option>
+	<option value='Mozambique' {if $users_extra_fields_field[fields].value eq "Mozambique"} selected="selected"{/if}>Mozambique</option>
+	<option value='Nagorno' {if $users_extra_fields_field[fields].value eq "Nagorno"} selected="selected"{/if}>Nagorno</option>
+	<option value='Namibia' {if $users_extra_fields_field[fields].value eq "Namibia"} selected="selected"{/if}>Namibia</option>
+	<option value='Nauru' {if $users_extra_fields_field[fields].value eq "Nauru"} selected="selected"{/if}>Nauru</option>
+	<option value='Nepal' {if $users_extra_fields_field[fields].value eq "Nepal"} selected="selected"{/if}>Nepal</option>
+	<option value='Netherlands' {if $users_extra_fields_field[fields].value eq "Netherlands"} selected="selected"{/if}>Netherlands</option>
+	<option value='Netherlands Antilles' {if $users_extra_fields_field[fields].value eq "Netherlands Antilles"} selected="selected"{/if}>Netherlands Antilles</option>
+	<option value='New Caledonia' {if $users_extra_fields_field[fields].value eq "New Caledonia"} selected="selected"{/if}>New Caledonia</option>
+	<option value='New Zealand' {if $users_extra_fields_field[fields].value eq "New Zealand"} selected="selected"{/if}>New Zealand</option>
+	<option value='Nicaragua' {if $users_extra_fields_field[fields].value eq "Nicaragua"} selected="selected"{/if}>Nicaragua</option>
+	<option value='Niger' {if $users_extra_fields_field[fields].value eq "Niger"} selected="selected"{/if}>Niger</option>
+	<option value='Nigeria' {if $users_extra_fields_field[fields].value eq "Nigeria"} selected="selected"{/if}>Nigeria</option>
+	<option value='Niue' {if $users_extra_fields_field[fields].value eq "Niue"} selected="selected"{/if}>Niue</option>
+	<option value='Norfolk Island' {if $users_extra_fields_field[fields].value eq "Norfolk Island"} selected="selected"{/if}>Norfolk Island</option>
+	<option value='Northern Cyprus' {if $users_extra_fields_field[fields].value eq "Northern Cyprus"} selected="selected"{/if}>Northern Cyprus</option>
+	<option value='Northern Mariana Islands' {if $users_extra_fields_field[fields].value eq "Northern Mariana Islands"} selected="selected"{/if}>Northern Mariana Islands</option>
+	<option value='Norway' {if $users_extra_fields_field[fields].value eq "Norway"} selected="selected"{/if}>Norway</option>
+	<option value='Oman' {if $users_extra_fields_field[fields].value eq "Oman"} selected="selected"{/if}>Oman</option>
+	<option value='Pakistan' {if $users_extra_fields_field[fields].value eq "Pakistan"} selected="selected"{/if}>Pakistan</option>
+	<option value='Palau' {if $users_extra_fields_field[fields].value eq "Palau"} selected="selected"{/if}>Palau</option>
+	<option value='Palestine' {if $users_extra_fields_field[fields].value eq "Palestine"} selected="selected"{/if}>Palestine</option>
+	<option value='Panama' {if $users_extra_fields_field[fields].value eq "Panama"} selected="selected"{/if}>Panama</option>
+	<option value='Papua New Guinea' {if $users_extra_fields_field[fields].value eq "Papua New Guinea"} selected="selected"{/if}>Papua New Guinea</option>
+	<option value='Paraguay' {if $users_extra_fields_field[fields].value eq "Paraguay"} selected="selected"{/if}>Paraguay</option>
+	<option value='Peru' {if $users_extra_fields_field[fields].value eq "Peru"} selected="selected"{/if}>Peru</option>
+	<option value='Philippines' {if $users_extra_fields_field[fields].value eq "Philippines"} selected="selected"{/if}>Philippines</option>
+	<option value='Pitcairn Islands' {if $users_extra_fields_field[fields].value eq "Pitcairn Islands"} selected="selected"{/if}>Pitcairn Islands</option>
+	<option value='Poland' {if $users_extra_fields_field[fields].value eq "Poland"} selected="selected"{/if}>Poland</option>
+	<option value='Portugal' {if $users_extra_fields_field[fields].value eq "Portugal"} selected="selected"{/if}>Portugal</option>
+	<option value='Puerto Rico' {if $users_extra_fields_field[fields].value eq "Puerto Rico"} selected="selected"{/if}>Puerto Rico</option>
+	<option value='Qatar' {if $users_extra_fields_field[fields].value eq "Qatar"} selected="selected"{/if}>Qatar</option>
+	<option value='Romania' {if $users_extra_fields_field[fields].value eq "Romania"} selected="selected"{/if}>Romania</option>
+	<option value='Russia' {if $users_extra_fields_field[fields].value eq "Russia"} selected="selected"{/if}>Russia</option>
+	<option value='Rwanda' {if $users_extra_fields_field[fields].value eq "Rwanda"} selected="selected"{/if}>Rwanda</option>
+	<option value='Saint Barthélemy' {if $users_extra_fields_field[fields].value eq "Saint Barthélemy"} selected="selected"{/if}>Saint Barthélemy</option>
+	<option value='Saint Helena' {if $users_extra_fields_field[fields].value eq "Saint Helena"} selected="selected"{/if}>Saint Helena</option>
+	<option value='Saint Kitts and Nevis' {if $users_extra_fields_field[fields].value eq "Saint Kitts and Nevis"} selected="selected"{/if}>Saint Kitts and Nevis</option>
+	<option value='Saint Lucia' {if $users_extra_fields_field[fields].value eq "Saint Lucia"} selected="selected"{/if}>Saint Lucia</option>
+	<option value='Saint Martin' {if $users_extra_fields_field[fields].value eq "Saint Martin"} selected="selected"{/if}>Saint Martin</option>
+	<option value='Saint Pierre and Miquelon' {if $users_extra_fields_field[fields].value eq "Saint Pierre and Miquelon"} selected="selected"{/if}>Saint Pierre and Miquelon</option>
+	<option value='Saint Vincent and the Grenadines' {if $users_extra_fields_field[fields].value eq "Saint Vincent and the Grenadines"} selected="selected"{/if}>Saint Vincent and the Grenadines</option>
+	<option value='Samoa' {if $users_extra_fields_field[fields].value eq "Samoa"} selected="selected"{/if}>Samoa</option>
+	<option value='San Marino' {if $users_extra_fields_field[fields].value eq "San Marino"} selected="selected"{/if}>San Marino</option>
+	<option value='São Tomé and Príncipe' {if $users_extra_fields_field[fields].value eq "São Tomé and Príncipe"} selected="selected"{/if}>São Tomé and Príncipe</option>
+	<option value='Saudi Arabia' {if $users_extra_fields_field[fields].value eq "Saudi Arabia"} selected="selected"{/if}>Saudi Arabia</option>
+	<option value='Senegal' {if $users_extra_fields_field[fields].value eq "Senegal"} selected="selected"{/if}>Senegal</option>
+	<option value='Serbia' {if $users_extra_fields_field[fields].value eq "Serbia"} selected="selected"{/if}>Serbia</option>
+	<option value='Seychelles' {if $users_extra_fields_field[fields].value eq "Seychelles"} selected="selected"{/if}>Seychelles</option>
+	<option value='Sierra Leone' {if $users_extra_fields_field[fields].value eq "Sierra Leone"} selected="selected"{/if}>Sierra Leone</option>
+	<option value='Singapore' {if $users_extra_fields_field[fields].value eq "Singapore"} selected="selected"{/if}>Singapore</option>
+	<option value='Slovakia' {if $users_extra_fields_field[fields].value eq "Slovakia"} selected="selected"{/if}>Slovakia</option>
+	<option value='Slovenia' {if $users_extra_fields_field[fields].value eq "Slovenia"} selected="selected"{/if}>Slovenia</option>
+	<option value='Solomon Islands' {if $users_extra_fields_field[fields].value eq "Solomon Islands"} selected="selected"{/if}>Solomon Islands</option>
+	<option value='Somalia' {if $users_extra_fields_field[fields].value eq "Somalia"} selected="selected"{/if}>Somalia</option>
+	<option value='Somaliland' {if $users_extra_fields_field[fields].value eq "Somaliland"} selected="selected"{/if}>Somaliland</option>
+	<option value='South Africa' {if $users_extra_fields_field[fields].value eq "South Africa"} selected="selected"{/if}>South Africa</option>
+	<option value='South Ossetia' {if $users_extra_fields_field[fields].value eq "South Ossetia"} selected="selected"{/if}>South Ossetia</option>
+	<option value='Spain' {if $users_extra_fields_field[fields].value eq "Spain"} selected="selected"{/if}>Spain</option>
+	<option value='Sri Lanka' {if $users_extra_fields_field[fields].value eq "Sri Lanka"} selected="selected"{/if}>Sri Lanka</option>
+	<option value='Sudan' {if $users_extra_fields_field[fields].value eq "Sudan"} selected="selected"{/if}>Sudan</option>
+	<option value='Suriname' {if $users_extra_fields_field[fields].value eq "Suriname"} selected="selected"{/if}>Suriname</option>
+	<option value='Svalbard' {if $users_extra_fields_field[fields].value eq "Svalbard"} selected="selected"{/if}>Svalbard</option>
+	<option value='Swaziland' {if $users_extra_fields_field[fields].value eq "Swaziland"} selected="selected"{/if}>Swaziland</option>
+	<option value='Sweden' {if $users_extra_fields_field[fields].value eq "Sweden"} selected="selected"{/if}>Sweden</option>
+	<option value='Switzerland' {if $users_extra_fields_field[fields].value eq "Switzerland"} selected="selected"{/if}>Switzerland</option>
+	<option value='Syria' {if $users_extra_fields_field[fields].value eq "Syria"} selected="selected"{/if}>Syria</option>
+	<option value='Taiwan' {if $users_extra_fields_field[fields].value eq "Taiwan"} selected="selected"{/if}>Taiwan</option>
+	<option value='Tajikistan' {if $users_extra_fields_field[fields].value eq "Tajikistan"} selected="selected"{/if}>Tajikistan</option>
+	<option value='Tanzania' {if $users_extra_fields_field[fields].value eq "Tanzania"} selected="selected"{/if}>Tanzania</option>
+	<option value='Thailand' {if $users_extra_fields_field[fields].value eq "Thailand"} selected="selected"{/if}>Thailand</option>
+	<option value='Togo' {if $users_extra_fields_field[fields].value eq "Togo"} selected="selected"{/if}>Togo</option>
+	<option value='Tokelau' {if $users_extra_fields_field[fields].value eq "Tokelau"} selected="selected"{/if}>Tokelau</option>
+	<option value='Tonga' {if $users_extra_fields_field[fields].value eq "Tonga"} selected="selected"{/if}>Tonga</option>
+	<option value='Transnistria' {if $users_extra_fields_field[fields].value eq "Transnistria"} selected="selected"{/if}>Transnistria</option>
+	<option value='Trinidad and Tobago' {if $users_extra_fields_field[fields].value eq "Trinidad and Tobago"} selected="selected"{/if}>Trinidad and Tobago</option>
+	<option value='Tristan da Cunha' {if $users_extra_fields_field[fields].value eq "Tristan da Cunha"} selected="selected"{/if}>Tristan da Cunha</option>
+	<option value='Tunisia' {if $users_extra_fields_field[fields].value eq "Tunisia"} selected="selected"{/if}>Tunisia</option>
+	<option value='Turkey' {if $users_extra_fields_field[fields].value eq "Turkey"} selected="selected"{/if}>Turkey</option>
+	<option value='Turkmenistan' {if $users_extra_fields_field[fields].value eq "Turkmenistan"} selected="selected"{/if}>Turkmenistan</option>
+	<option value='Turks and Caicos Islands' {if $users_extra_fields_field[fields].value eq "Turks and Caicos Islands"} selected="selected"{/if}>Turks and Caicos Islands</option>
+	<option value='Tuvalu' {if $users_extra_fields_field[fields].value eq "Tuvalu"} selected="selected"{/if}>Tuvalu</option>
+	<option value='Uganda' {if $users_extra_fields_field[fields].value eq "Uganda"} selected="selected"{/if}>Uganda</option>
+	<option value='Ukraine' {if $users_extra_fields_field[fields].value eq "Ukraine"} selected="selected"{/if}>Ukraine</option>
+	<option value='United Arab Emirates' {if $users_extra_fields_field[fields].value eq "United Arab Emirates"} selected="selected"{/if}>United Arab Emirates</option>
+	<option value='United Kingdom' {if $users_extra_fields_field[fields].value eq "United Kingdom"} selected="selected"{/if}>United Kingdom</option>
+	<option value='United States' {if $users_extra_fields_field[fields].value eq "United States"} selected="selected"{/if}>United States</option>
+	<option value='Uruguay' {if $users_extra_fields_field[fields].value eq "Uruguay"} selected="selected"{/if}>Uruguay</option>
+	<option value='Uzbekistan' {if $users_extra_fields_field[fields].value eq "Uzbekistan"} selected="selected"{/if}>Uzbekistan</option>
+	<option value='Vanuatu' {if $users_extra_fields_field[fields].value eq "Vanuatu"} selected="selected"{/if}>Vanuatu</option>
+	<option value='Vatican City' {if $users_extra_fields_field[fields].value eq "Vatican City"} selected="selected"{/if}>Vatican City</option>
+	<option value='Venezuela' {if $users_extra_fields_field[fields].value eq "Venezuela"} selected="selected"{/if}>Venezuela</option>
+	<option value='Vietnam' {if $users_extra_fields_field[fields].value eq "Vietnam"} selected="selected"{/if}>Vietnam</option>
+	<option value='Virgin Islands, British' {if $users_extra_fields_field[fields].value eq "Virgin Islands, British"} selected="selected"{/if}>Virgin Islands, British</option>
+	<option value='Virgin Islands, United States' {if $users_extra_fields_field[fields].value eq "Virgin Islands, United States"} selected="selected"{/if}>Virgin Islands, United States</option>
+	<option value='Wallis and Futuna' {if $users_extra_fields_field[fields].value eq "Wallis and Futuna"} selected="selected"{/if}>Wallis and Futuna</option>
+	<option value='Western Sahara' {if $users_extra_fields_field[fields].value eq "Western Sahara"} selected="selected"{/if}>Western Sahara</option>
+	<option value='Yemen' {if $users_extra_fields_field[fields].value eq "Yemen"} selected="selected"{/if}>Yemen</option>
+	<option value='Zambia' {if $users_extra_fields_field[fields].value eq "Zambia"} selected="selected"{/if}>Zambia</option>
+</select>
+
+To use for the years
+
+<select  name="{$users_extra_fields_field[fields].name}" id="{$users_extra_fields_field[fields].name}">
+	<option value='' {if $users_extra_fields_field[fields].value eq ""} selected="selected"{/if}>Select a year</option>
+	<option value='1900' {if $users_extra_fields_field[fields].value eq "1900"} selected="selected"{/if}>1900</option>
+	<option value='1901' {if $users_extra_fields_field[fields].value eq "1901"} selected="selected"{/if}>1901</option>
+	<option value='1902' {if $users_extra_fields_field[fields].value eq "1902"} selected="selected"{/if}>1902</option>
+	<option value='1903' {if $users_extra_fields_field[fields].value eq "1903"} selected="selected"{/if}>1903</option>
+	<option value='1904' {if $users_extra_fields_field[fields].value eq "1904"} selected="selected"{/if}>1904</option>
+	<option value='1905' {if $users_extra_fields_field[fields].value eq "1905"} selected="selected"{/if}>1905</option>
+	<option value='1906' {if $users_extra_fields_field[fields].value eq "1906"} selected="selected"{/if}>1906</option>
+	<option value='1907' {if $users_extra_fields_field[fields].value eq "1907"} selected="selected"{/if}>1907</option>
+	<option value='1908' {if $users_extra_fields_field[fields].value eq "1908"} selected="selected"{/if}>1908</option>
+	<option value='1909' {if $users_extra_fields_field[fields].value eq "1909"} selected="selected"{/if}>1909</option>
+	<option value='1910' {if $users_extra_fields_field[fields].value eq "1910"} selected="selected"{/if}>1910</option>
+	<option value='1911' {if $users_extra_fields_field[fields].value eq "1911"} selected="selected"{/if}>1911</option>
+	<option value='1912' {if $users_extra_fields_field[fields].value eq "1912"} selected="selected"{/if}>1912</option>
+	<option value='1913' {if $users_extra_fields_field[fields].value eq "1913"} selected="selected"{/if}>1913</option>
+	<option value='1914' {if $users_extra_fields_field[fields].value eq "1914"} selected="selected"{/if}>1914</option>
+	<option value='1915' {if $users_extra_fields_field[fields].value eq "1915"} selected="selected"{/if}>1915</option>
+	<option value='1916' {if $users_extra_fields_field[fields].value eq "1916"} selected="selected"{/if}>1916</option>
+	<option value='1917' {if $users_extra_fields_field[fields].value eq "1917"} selected="selected"{/if}>1917</option>
+	<option value='1918' {if $users_extra_fields_field[fields].value eq "1918"} selected="selected"{/if}>1918</option>
+	<option value='1919' {if $users_extra_fields_field[fields].value eq "1919"} selected="selected"{/if}>1919</option>
+	<option value='1920' {if $users_extra_fields_field[fields].value eq "1920"} selected="selected"{/if}>1920</option>
+	<option value='1921' {if $users_extra_fields_field[fields].value eq "1921"} selected="selected"{/if}>1921</option>
+	<option value='1922' {if $users_extra_fields_field[fields].value eq "1922"} selected="selected"{/if}>1922</option>
+	<option value='1923' {if $users_extra_fields_field[fields].value eq "1923"} selected="selected"{/if}>1923</option>
+	<option value='1924' {if $users_extra_fields_field[fields].value eq "1924"} selected="selected"{/if}>1924</option>
+	<option value='1925' {if $users_extra_fields_field[fields].value eq "1925"} selected="selected"{/if}>1925</option>
+	<option value='1926' {if $users_extra_fields_field[fields].value eq "1926"} selected="selected"{/if}>1926</option>
+	<option value='1927' {if $users_extra_fields_field[fields].value eq "1927"} selected="selected"{/if}>1927</option>
+	<option value='1928' {if $users_extra_fields_field[fields].value eq "1928"} selected="selected"{/if}>1928</option>
+	<option value='1929' {if $users_extra_fields_field[fields].value eq "1929"} selected="selected"{/if}>1929</option>
+	<option value='1930' {if $users_extra_fields_field[fields].value eq "1930"} selected="selected"{/if}>1930</option>
+	<option value='1931' {if $users_extra_fields_field[fields].value eq "1931"} selected="selected"{/if}>1931</option>
+	<option value='1932' {if $users_extra_fields_field[fields].value eq "1932"} selected="selected"{/if}>1932</option>
+	<option value='1933' {if $users_extra_fields_field[fields].value eq "1933"} selected="selected"{/if}>1933</option>
+	<option value='1934' {if $users_extra_fields_field[fields].value eq "1934"} selected="selected"{/if}>1934</option>
+	<option value='1935' {if $users_extra_fields_field[fields].value eq "1935"} selected="selected"{/if}>1935</option>
+	<option value='1936' {if $users_extra_fields_field[fields].value eq "1936"} selected="selected"{/if}>1936</option>
+	<option value='1937' {if $users_extra_fields_field[fields].value eq "1937"} selected="selected"{/if}>1937</option>
+	<option value='1938' {if $users_extra_fields_field[fields].value eq "1938"} selected="selected"{/if}>1938</option>
+	<option value='1939' {if $users_extra_fields_field[fields].value eq "1939"} selected="selected"{/if}>1939</option>
+	<option value='1940' {if $users_extra_fields_field[fields].value eq "1940"} selected="selected"{/if}>1940</option>
+	<option value='1941' {if $users_extra_fields_field[fields].value eq "1941"} selected="selected"{/if}>1941</option>
+	<option value='1942' {if $users_extra_fields_field[fields].value eq "1942"} selected="selected"{/if}>1942</option>
+	<option value='1943' {if $users_extra_fields_field[fields].value eq "1943"} selected="selected"{/if}>1943</option>
+	<option value='1944' {if $users_extra_fields_field[fields].value eq "1944"} selected="selected"{/if}>1944</option>
+	<option value='1945' {if $users_extra_fields_field[fields].value eq "1945"} selected="selected"{/if}>1945</option>
+	<option value='1946' {if $users_extra_fields_field[fields].value eq "1946"} selected="selected"{/if}>1946</option>
+	<option value='1947' {if $users_extra_fields_field[fields].value eq "1947"} selected="selected"{/if}>1947</option>
+	<option value='1948' {if $users_extra_fields_field[fields].value eq "1948"} selected="selected"{/if}>1948</option>
+	<option value='1949' {if $users_extra_fields_field[fields].value eq "1949"} selected="selected"{/if}>1949</option>
+	<option value='1950' {if $users_extra_fields_field[fields].value eq "1950"} selected="selected"{/if}>1950</option>
+	<option value='1951' {if $users_extra_fields_field[fields].value eq "1951"} selected="selected"{/if}>1951</option>
+	<option value='1952' {if $users_extra_fields_field[fields].value eq "1952"} selected="selected"{/if}>1952</option>
+	<option value='1953' {if $users_extra_fields_field[fields].value eq "1953"} selected="selected"{/if}>1953</option>
+	<option value='1954' {if $users_extra_fields_field[fields].value eq "1954"} selected="selected"{/if}>1954</option>
+	<option value='1955' {if $users_extra_fields_field[fields].value eq "1955"} selected="selected"{/if}>1955</option>
+	<option value='1956' {if $users_extra_fields_field[fields].value eq "1956"} selected="selected"{/if}>1956</option>
+	<option value='1957' {if $users_extra_fields_field[fields].value eq "1957"} selected="selected"{/if}>1957</option>
+	<option value='1958' {if $users_extra_fields_field[fields].value eq "1958"} selected="selected"{/if}>1958</option>
+	<option value='1959' {if $users_extra_fields_field[fields].value eq "1959"} selected="selected"{/if}>1959</option>
+	<option value='1960' {if $users_extra_fields_field[fields].value eq "1960"} selected="selected"{/if}>1960</option>
+	<option value='1961' {if $users_extra_fields_field[fields].value eq "1961"} selected="selected"{/if}>1961</option>
+	<option value='1962' {if $users_extra_fields_field[fields].value eq "1962"} selected="selected"{/if}>1962</option>
+	<option value='1963' {if $users_extra_fields_field[fields].value eq "1963"} selected="selected"{/if}>1963</option>
+	<option value='1964' {if $users_extra_fields_field[fields].value eq "1964"} selected="selected"{/if}>1964</option>
+	<option value='1965' {if $users_extra_fields_field[fields].value eq "1965"} selected="selected"{/if}>1965</option>
+	<option value='1966' {if $users_extra_fields_field[fields].value eq "1966"} selected="selected"{/if}>1966</option>
+	<option value='1967' {if $users_extra_fields_field[fields].value eq "1967"} selected="selected"{/if}>1967</option>
+	<option value='1968' {if $users_extra_fields_field[fields].value eq "1968"} selected="selected"{/if}>1968</option>
+	<option value='1969' {if $users_extra_fields_field[fields].value eq "1969"} selected="selected"{/if}>1969</option>
+	<option value='1970' {if $users_extra_fields_field[fields].value eq "1970"} selected="selected"{/if}>1970</option>
+	<option value='1971' {if $users_extra_fields_field[fields].value eq "1971"} selected="selected"{/if}>1971</option>
+	<option value='1972' {if $users_extra_fields_field[fields].value eq "1972"} selected="selected"{/if}>1972</option>
+	<option value='1973' {if $users_extra_fields_field[fields].value eq "1973"} selected="selected"{/if}>1973</option>
+	<option value='1974' {if $users_extra_fields_field[fields].value eq "1974"} selected="selected"{/if}>1974</option>
+	<option value='1975' {if $users_extra_fields_field[fields].value eq "1975"} selected="selected"{/if}>1975</option>
+	<option value='1976' {if $users_extra_fields_field[fields].value eq "1976"} selected="selected"{/if}>1976</option>
+	<option value='1977' {if $users_extra_fields_field[fields].value eq "1977"} selected="selected"{/if}>1977</option>
+	<option value='1978' {if $users_extra_fields_field[fields].value eq "1978"} selected="selected"{/if}>1978</option>
+	<option value='1979' {if $users_extra_fields_field[fields].value eq "1979"} selected="selected"{/if}>1979</option>
+	<option value='1980' {if $users_extra_fields_field[fields].value eq "1980"} selected="selected"{/if}>1980</option>
+	<option value='1981' {if $users_extra_fields_field[fields].value eq "1981"} selected="selected"{/if}>1981</option>
+	<option value='1982' {if $users_extra_fields_field[fields].value eq "1982"} selected="selected"{/if}>1982</option>
+	<option value='1983' {if $users_extra_fields_field[fields].value eq "1983"} selected="selected"{/if}>1983</option>
+	<option value='1984' {if $users_extra_fields_field[fields].value eq "1984"} selected="selected"{/if}>1984</option>
+	<option value='1985' {if $users_extra_fields_field[fields].value eq "1985"} selected="selected"{/if}>1985</option>
+	<option value='1986' {if $users_extra_fields_field[fields].value eq "1986"} selected="selected"{/if}>1986</option>
+	<option value='1987' {if $users_extra_fields_field[fields].value eq "1987"} selected="selected"{/if}>1987</option>
+	<option value='1988' {if $users_extra_fields_field[fields].value eq "1988"} selected="selected"{/if}>1988</option>
+	<option value='1989' {if $users_extra_fields_field[fields].value eq "1989"} selected="selected"{/if}>1989</option>
+	<option value='1990' {if $users_extra_fields_field[fields].value eq "1990"} selected="selected"{/if}>1990</option>
+	<option value='1991' {if $users_extra_fields_field[fields].value eq "1991"} selected="selected"{/if}>1991</option>
+	<option value='1992' {if $users_extra_fields_field[fields].value eq "1992"} selected="selected"{/if}>1992</option>
+	<option value='1993' {if $users_extra_fields_field[fields].value eq "1993"} selected="selected"{/if}>1993</option>
+	<option value='1994' {if $users_extra_fields_field[fields].value eq "1994"} selected="selected"{/if}>1994</option>
+	<option value='1995' {if $users_extra_fields_field[fields].value eq "1995"} selected="selected"{/if}>1995</option>
+	<option value='1996' {if $users_extra_fields_field[fields].value eq "1996"} selected="selected"{/if}>1996</option>
+	<option value='1997' {if $users_extra_fields_field[fields].value eq "1997"} selected="selected"{/if}>1997</option>
+	<option value='1998' {if $users_extra_fields_field[fields].value eq "1998"} selected="selected"{/if}>1998</option>
+	<option value='1999' {if $users_extra_fields_field[fields].value eq "1999"} selected="selected"{/if}>1999</option>
+	<option value='2000' {if $users_extra_fields_field[fields].value eq "2000"} selected="selected"{/if}>2000</option>
+	<option value='2001' {if $users_extra_fields_field[fields].value eq "2001"} selected="selected"{/if}>2001</option>
+	<option value='2002' {if $users_extra_fields_field[fields].value eq "2002"} selected="selected"{/if}>2002</option>
+	<option value='2003' {if $users_extra_fields_field[fields].value eq "2003"} selected="selected"{/if}>2003</option>
+	<option value='2004' {if $users_extra_fields_field[fields].value eq "2004"} selected="selected"{/if}>2004</option>
+	<option value='2005' {if $users_extra_fields_field[fields].value eq "2005"} selected="selected"{/if}>2005</option>
+	<option value='2006' {if $users_extra_fields_field[fields].value eq "2006"} selected="selected"{/if}>2006</option>
+	<option value='2007' {if $users_extra_fields_field[fields].value eq "2007"} selected="selected"{/if}>2007</option>
+	<option value='2008' {if $users_extra_fields_field[fields].value eq "2008"} selected="selected"{/if}>2008</option>
+</select>
+
+To use for months
+
+<select  name="{$users_extra_fields_field[fields].name}" id="{$users_extra_fields_field[fields].name}">
+	<option value='' {if $users_extra_fields_field[fields].value eq ""} selected="selected"{/if}>Select a month</option>
+	<option value='January' {if $users_extra_fields_field[fields].value eq "January"} selected="selected"{/if}>January</option>
+	<option value='February' {if $users_extra_fields_field[fields].value eq "February"} selected="selected"{/if}>February</option>
+	<option value='March' {if $users_extra_fields_field[fields].value eq "March"} selected="selected"{/if}>March</option>
+	<option value='April' {if $users_extra_fields_field[fields].value eq "April"} selected="selected"{/if}>April</option>
+	<option value='May' {if $users_extra_fields_field[fields].value eq "May"} selected="selected"{/if}>May</option>
+	<option value='June' {if $users_extra_fields_field[fields].value eq "June"} selected="selected"{/if}>June</option>
+	<option value='July' {if $users_extra_fields_field[fields].value eq "July"} selected="selected"{/if}>July</option>
+	<option value='August' {if $users_extra_fields_field[fields].value eq "August"} selected="selected"{/if}>August</option>
+	<option value='September' {if $users_extra_fields_field[fields].value eq "September"} selected="selected"{/if}>September</option>
+	<option value='October' {if $users_extra_fields_field[fields].value eq "October"} selected="selected"{/if}>October</option>
+	<option value='November' {if $users_extra_fields_field[fields].value eq "November"} selected="selected"{/if}>November</option>
+	<option value='December' {if $users_extra_fields_field[fields].value eq "December"} selected="selected"{/if}>December</option>
+</select>
+
+To use for months (numbers)
+
+<select  name="{$users_extra_fields_field[fields].name}" id="{$users_extra_fields_field[fields].name}">
+	<option value='' {if $users_extra_fields_field[fields].value eq ""} selected="selected"{/if}>Select a month</option>
+	<option value='01' {if $users_extra_fields_field[fields].value eq "01"} selected="selected"{/if}>01</option>
+	<option value='02' {if $users_extra_fields_field[fields].value eq "02"} selected="selected"{/if}>02</option>
+	<option value='03' {if $users_extra_fields_field[fields].value eq "03"} selected="selected"{/if}>03</option>
+	<option value='04' {if $users_extra_fields_field[fields].value eq "04"} selected="selected"{/if}>04</option>
+	<option value='05' {if $users_extra_fields_field[fields].value eq "05"} selected="selected"{/if}>05</option>
+	<option value='06' {if $users_extra_fields_field[fields].value eq "06"} selected="selected"{/if}>06</option>
+	<option value='07' {if $users_extra_fields_field[fields].value eq "07"} selected="selected"{/if}>07</option>
+	<option value='08' {if $users_extra_fields_field[fields].value eq "08"} selected="selected"{/if}>08</option>
+	<option value='09' {if $users_extra_fields_field[fields].value eq "09"} selected="selected"{/if}>09</option>
+	<option value='10' {if $users_extra_fields_field[fields].value eq "10"} selected="selected"{/if}>10</option>
+	<option value='11' {if $users_extra_fields_field[fields].value eq "11"} selected="selected"{/if}>11</option>
+	<option value='12' {if $users_extra_fields_field[fields].value eq "12"} selected="selected"{/if}>12</option>
+</select>
+
+To use for the days of months
+
+<select  name="{$users_extra_fields_field[fields].name}" id="{$users_extra_fields_field[fields].name}">
+	<option value='' {if $users_extra_fields_field[fields].value eq ""} selected="selected"{/if}>Select a day</option>
+	<option value='01' {if $users_extra_fields_field[fields].value eq "01"} selected="selected"{/if}>01</option>
+	<option value='02' {if $users_extra_fields_field[fields].value eq "02"} selected="selected"{/if}>02</option>
+	<option value='03' {if $users_extra_fields_field[fields].value eq "03"} selected="selected"{/if}>03</option>
+	<option value='04' {if $users_extra_fields_field[fields].value eq "04"} selected="selected"{/if}>04</option>
+	<option value='05' {if $users_extra_fields_field[fields].value eq "05"} selected="selected"{/if}>05</option>
+	<option value='06' {if $users_extra_fields_field[fields].value eq "06"} selected="selected"{/if}>06</option>
+	<option value='07' {if $users_extra_fields_field[fields].value eq "07"} selected="selected"{/if}>07</option>
+	<option value='08' {if $users_extra_fields_field[fields].value eq "08"} selected="selected"{/if}>08</option>
+	<option value='09' {if $users_extra_fields_field[fields].value eq "09"} selected="selected"{/if}>09</option>
+	<option value='10' {if $users_extra_fields_field[fields].value eq "10"} selected="selected"{/if}>10</option>
+	<option value='11' {if $users_extra_fields_field[fields].value eq "11"} selected="selected"{/if}>11</option>
+	<option value='12' {if $users_extra_fields_field[fields].value eq "12"} selected="selected"{/if}>12</option>
+	<option value='13' {if $users_extra_fields_field[fields].value eq "13"} selected="selected"{/if}>13</option>
+	<option value='14' {if $users_extra_fields_field[fields].value eq "14"} selected="selected"{/if}>14</option>
+	<option value='15' {if $users_extra_fields_field[fields].value eq "15"} selected="selected"{/if}>15</option>
+	<option value='16' {if $users_extra_fields_field[fields].value eq "16"} selected="selected"{/if}>16</option>
+	<option value='17' {if $users_extra_fields_field[fields].value eq "17"} selected="selected"{/if}>17</option>
+	<option value='18' {if $users_extra_fields_field[fields].value eq "18"} selected="selected"{/if}>18</option>
+	<option value='19' {if $users_extra_fields_field[fields].value eq "19"} selected="selected"{/if}>19</option>
+	<option value='20' {if $users_extra_fields_field[fields].value eq "20"} selected="selected"{/if}>20</option>
+	<option value='21' {if $users_extra_fields_field[fields].value eq "21"} selected="selected"{/if}>21</option>
+	<option value='22' {if $users_extra_fields_field[fields].value eq "22"} selected="selected"{/if}>22</option>
+	<option value='23' {if $users_extra_fields_field[fields].value eq "23"} selected="selected"{/if}>23</option>
+	<option value='24' {if $users_extra_fields_field[fields].value eq "24"} selected="selected"{/if}>24</option>
+	<option value='25' {if $users_extra_fields_field[fields].value eq "25"} selected="selected"{/if}>25</option>
+	<option value='26' {if $users_extra_fields_field[fields].value eq "26"} selected="selected"{/if}>26</option>
+	<option value='27' {if $users_extra_fields_field[fields].value eq "27"} selected="selected"{/if}>27</option>
+	<option value='28' {if $users_extra_fields_field[fields].value eq "28"} selected="selected"{/if}>28</option>
+	<option value='29' {if $users_extra_fields_field[fields].value eq "29"} selected="selected"{/if}>29</option>
+	<option value='30' {if $users_extra_fields_field[fields].value eq "30"} selected="selected"{/if}>30</option>
+	<option value='31' {if $users_extra_fields_field[fields].value eq "31"} selected="selected"{/if}>31</option>
+</select>
+
+To use for the days of the week
+
+<select  name="{$users_extra_fields_field[fields].name}" id="{$users_extra_fields_field[fields].name}">
+	<option value='' {if $users_extra_fields_field[fields].value eq ""} selected="selected"{/if}>Select a weekday</option>
+	<option value='Monday' {if $users_extra_fields_field[fields].value eq "Monday"} selected="selected"{/if}>Monday</option>
+	<option value='Tuesday' {if $users_extra_fields_field[fields].value eq "Tuesday"} selected="selected"{/if}>Tuesday</option>
+	<option value='Wednesday' {if $users_extra_fields_field[fields].value eq "Wednesday"} selected="selected"{/if}>Wednesday</option>
+	<option value='Thursday' {if $users_extra_fields_field[fields].value eq "Thursday"} selected="selected"{/if}>Thursday</option>
+	<option value='Friday' {if $users_extra_fields_field[fields].value eq "Friday"} selected="selected"{/if}>Friday</option>
+	<option value='Saturday' {if $users_extra_fields_field[fields].value eq "Saturday"} selected="selected"{/if}>Saturday</option>
+	<option value='Sunday' {if $users_extra_fields_field[fields].value eq "Sunday"} selected="selected"{/if}>Sunday</option>
+</select>
+
+To use for Gender
+
+<select  name="{$users_extra_fields_field[fields].name}" id="{$users_extra_fields_field[fields].name}">
+	<option value='' {if $users_extra_fields_field[fields].value eq ""} selected="selected"{/if}>Select a gender</option>
+	<option value='Male' {if $users_extra_fields_field[fields].value eq "Male"} selected="selected"{/if}>Male</option>
+	<option value='Female' {if $users_extra_fields_field[fields].value eq "Female"} selected="selected"{/if}>Female</option>
+</select>
+
+To use for age
+
+<select  name="{$users_extra_fields_field[fields].name}" id="{$users_extra_fields_field[fields].name}">
+	<option value='' {if $users_extra_fields_field[fields].value eq ""} selected="selected"{/if}>Select an age</option>
+	<option value='15' {if $users_extra_fields_field[fields].value eq "15"} selected="selected"{/if}>15</option>
+	<option value='16' {if $users_extra_fields_field[fields].value eq "16"} selected="selected"{/if}>16</option>
+	<option value='17' {if $users_extra_fields_field[fields].value eq "17"} selected="selected"{/if}>17</option>
+	<option value='18' {if $users_extra_fields_field[fields].value eq "18"} selected="selected"{/if}>18</option>
+	<option value='19' {if $users_extra_fields_field[fields].value eq "19"} selected="selected"{/if}>19</option>
+	<option value='20' {if $users_extra_fields_field[fields].value eq "20"} selected="selected"{/if}>20</option>
+	<option value='21' {if $users_extra_fields_field[fields].value eq "21"} selected="selected"{/if}>21</option>
+	<option value='22' {if $users_extra_fields_field[fields].value eq "22"} selected="selected"{/if}>22</option>
+	<option value='23' {if $users_extra_fields_field[fields].value eq "23"} selected="selected"{/if}>23</option>
+	<option value='24' {if $users_extra_fields_field[fields].value eq "24"} selected="selected"{/if}>24</option>
+	<option value='25' {if $users_extra_fields_field[fields].value eq "25"} selected="selected"{/if}>25</option>
+	<option value='26' {if $users_extra_fields_field[fields].value eq "26"} selected="selected"{/if}>26</option>
+	<option value='27' {if $users_extra_fields_field[fields].value eq "27"} selected="selected"{/if}>27</option>
+	<option value='28' {if $users_extra_fields_field[fields].value eq "28"} selected="selected"{/if}>28</option>
+	<option value='29' {if $users_extra_fields_field[fields].value eq "29"} selected="selected"{/if}>29</option>
+	<option value='30' {if $users_extra_fields_field[fields].value eq "30"} selected="selected"{/if}>30</option>
+	<option value='31' {if $users_extra_fields_field[fields].value eq "31"} selected="selected"{/if}>31</option>
+	<option value='32' {if $users_extra_fields_field[fields].value eq "32"} selected="selected"{/if}>32</option>
+	<option value='33' {if $users_extra_fields_field[fields].value eq "33"} selected="selected"{/if}>33</option>
+	<option value='34' {if $users_extra_fields_field[fields].value eq "34"} selected="selected"{/if}>34</option>
+	<option value='35' {if $users_extra_fields_field[fields].value eq "35"} selected="selected"{/if}>35</option>
+	<option value='36' {if $users_extra_fields_field[fields].value eq "36"} selected="selected"{/if}>36</option>
+	<option value='37' {if $users_extra_fields_field[fields].value eq "37"} selected="selected"{/if}>37</option>
+	<option value='38' {if $users_extra_fields_field[fields].value eq "38"} selected="selected"{/if}>38</option>
+	<option value='39' {if $users_extra_fields_field[fields].value eq "39"} selected="selected"{/if}>39</option>
+	<option value='40' {if $users_extra_fields_field[fields].value eq "40"} selected="selected"{/if}>40</option>
+	<option value='41' {if $users_extra_fields_field[fields].value eq "41"} selected="selected"{/if}>41</option>
+	<option value='42' {if $users_extra_fields_field[fields].value eq "42"} selected="selected"{/if}>42</option>
+	<option value='43' {if $users_extra_fields_field[fields].value eq "43"} selected="selected"{/if}>43</option>
+	<option value='44' {if $users_extra_fields_field[fields].value eq "44"} selected="selected"{/if}>44</option>
+	<option value='45' {if $users_extra_fields_field[fields].value eq "45"} selected="selected"{/if}>45</option>
+	<option value='46' {if $users_extra_fields_field[fields].value eq "46"} selected="selected"{/if}>46</option>
+	<option value='47' {if $users_extra_fields_field[fields].value eq "47"} selected="selected"{/if}>47</option>
+	<option value='48' {if $users_extra_fields_field[fields].value eq "48"} selected="selected"{/if}>48</option>
+	<option value='49' {if $users_extra_fields_field[fields].value eq "49"} selected="selected"{/if}>49</option>
+	<option value='50' {if $users_extra_fields_field[fields].value eq "50"} selected="selected"{/if}>50</option>
+	<option value='51' {if $users_extra_fields_field[fields].value eq "51"} selected="selected"{/if}>51</option>
+	<option value='52' {if $users_extra_fields_field[fields].value eq "52"} selected="selected"{/if}>52</option>
+	<option value='53' {if $users_extra_fields_field[fields].value eq "53"} selected="selected"{/if}>53</option>
+	<option value='54' {if $users_extra_fields_field[fields].value eq "54"} selected="selected"{/if}>54</option>
+	<option value='55' {if $users_extra_fields_field[fields].value eq "55"} selected="selected"{/if}>55</option>
+	<option value='56' {if $users_extra_fields_field[fields].value eq "56"} selected="selected"{/if}>56</option>
+	<option value='57' {if $users_extra_fields_field[fields].value eq "57"} selected="selected"{/if}>57</option>
+	<option value='58' {if $users_extra_fields_field[fields].value eq "58"} selected="selected"{/if}>58</option>
+	<option value='59' {if $users_extra_fields_field[fields].value eq "59"} selected="selected"{/if}>59</option>
+	<option value='60' {if $users_extra_fields_field[fields].value eq "60"} selected="selected"{/if}>60</option>
+	<option value='61' {if $users_extra_fields_field[fields].value eq "61"} selected="selected"{/if}>61</option>
+	<option value='62' {if $users_extra_fields_field[fields].value eq "62"} selected="selected"{/if}>62</option>
+	<option value='63' {if $users_extra_fields_field[fields].value eq "63"} selected="selected"{/if}>63</option>
+	<option value='64' {if $users_extra_fields_field[fields].value eq "64"} selected="selected"{/if}>64</option>
+	<option value='65' {if $users_extra_fields_field[fields].value eq "65"} selected="selected"{/if}>65</option>
+	<option value='66' {if $users_extra_fields_field[fields].value eq "66"} selected="selected"{/if}>66</option>
+	<option value='67' {if $users_extra_fields_field[fields].value eq "67"} selected="selected"{/if}>67</option>
+	<option value='68' {if $users_extra_fields_field[fields].value eq "68"} selected="selected"{/if}>68</option>
+	<option value='69' {if $users_extra_fields_field[fields].value eq "69"} selected="selected"{/if}>69</option>
+	<option value='70' {if $users_extra_fields_field[fields].value eq "70"} selected="selected"{/if}>70</option>
+	<option value='71' {if $users_extra_fields_field[fields].value eq "71"} selected="selected"{/if}>71</option>
+	<option value='72' {if $users_extra_fields_field[fields].value eq "72"} selected="selected"{/if}>72</option>
+	<option value='73' {if $users_extra_fields_field[fields].value eq "73"} selected="selected"{/if}>73</option>
+	<option value='74' {if $users_extra_fields_field[fields].value eq "74"} selected="selected"{/if}>74</option>
+	<option value='75' {if $users_extra_fields_field[fields].value eq "75"} selected="selected"{/if}>75</option>
+	<option value='76' {if $users_extra_fields_field[fields].value eq "76"} selected="selected"{/if}>76</option>
+	<option value='77' {if $users_extra_fields_field[fields].value eq "77"} selected="selected"{/if}>77</option>
+	<option value='78' {if $users_extra_fields_field[fields].value eq "78"} selected="selected"{/if}>78</option>
+	<option value='79' {if $users_extra_fields_field[fields].value eq "79"} selected="selected"{/if}>79</option>
+	<option value='80' {if $users_extra_fields_field[fields].value eq "80"} selected="selected"{/if}>80</option>
+	<option value='81' {if $users_extra_fields_field[fields].value eq "81"} selected="selected"{/if}>81</option>
+	<option value='82' {if $users_extra_fields_field[fields].value eq "82"} selected="selected"{/if}>82</option>
+	<option value='83' {if $users_extra_fields_field[fields].value eq "83"} selected="selected"{/if}>83</option>
+	<option value='84' {if $users_extra_fields_field[fields].value eq "84"} selected="selected"{/if}>84</option>
+	<option value='85' {if $users_extra_fields_field[fields].value eq "85"} selected="selected"{/if}>85</option>
+	<option value='86' {if $users_extra_fields_field[fields].value eq "86"} selected="selected"{/if}>86</option>
+	<option value='87' {if $users_extra_fields_field[fields].value eq "87"} selected="selected"{/if}>87</option>
+	<option value='88' {if $users_extra_fields_field[fields].value eq "88"} selected="selected"{/if}>88</option>
+	<option value='89' {if $users_extra_fields_field[fields].value eq "89"} selected="selected"{/if}>89</option>
+	<option value='90' {if $users_extra_fields_field[fields].value eq "90"} selected="selected"{/if}>90</option>
+	<option value='91' {if $users_extra_fields_field[fields].value eq "91"} selected="selected"{/if}>91</option>
+	<option value='92' {if $users_extra_fields_field[fields].value eq "92"} selected="selected"{/if}>92</option>
+	<option value='93' {if $users_extra_fields_field[fields].value eq "93"} selected="selected"{/if}>93</option>
+	<option value='94' {if $users_extra_fields_field[fields].value eq "94"} selected="selected"{/if}>94</option>
+	<option value='95' {if $users_extra_fields_field[fields].value eq "95"} selected="selected"{/if}>95</option>
+	<option value='96' {if $users_extra_fields_field[fields].value eq "96"} selected="selected"{/if}>96</option>
+	<option value='97' {if $users_extra_fields_field[fields].value eq "97"} selected="selected"{/if}>97</option>
+	<option value='98' {if $users_extra_fields_field[fields].value eq "98"} selected="selected"{/if}>98</option>
+	<option value='99' {if $users_extra_fields_field[fields].value eq "99"} selected="selected"{/if}>99</option>
+</select>
+
+To use for cars
+
+	<select  name="{$users_extra_fields_field[fields].name}" id="{$users_extra_fields_field[fields].name}">
+		<option value='' {if $users_extra_fields_field[fields].value eq ""} selected="selected"{/if}>No vehicle</option>
+		<option value='sedan' {if $users_extra_fields_field[fields].value eq "sedan"} selected="selected"{/if}>sedan</option>
+		<option value='sportscar' {if $users_extra_fields_field[fields].value eq "sportscar"} selected="selected"{/if}>sportscar</option>
+		<option value='convertible' {if $users_extra_fields_field[fields].value eq "convertible"} selected="selected"{/if}>convertible</option>
+		<option value='station wagon' {if $users_extra_fields_field[fields].value eq "station wagon"} selected="selected"{/if}>station wagon</option>
+		<option value='suv' {if $users_extra_fields_field[fields].value eq "suv"} selected="selected"{/if}>suv</option>
+		<option value='pickup' {if $users_extra_fields_field[fields].value eq "pickup"} selected="selected"{/if}>pickup</option>
+		<option value='offroad' {if $users_extra_fields_field[fields].value eq "offroad"} selected="selected"{/if}>offroad</option>
+		<option value='van' {if $users_extra_fields_field[fields].value eq "van"} selected="selected"{/if}>van</option>
+		<option value='caravan' {if $users_extra_fields_field[fields].value eq "caravan"} selected="selected"{/if}>caravan</option>
+		<option value='speedboat' {if $users_extra_fields_field[fields].value eq "speedboat"} selected="selected"{/if}>speedboat</option>
+		<option value='motorcycle' {if $users_extra_fields_field[fields].value eq "motorcycle"} selected="selected"{/if}>motorcycle</option>
+	</select>
+
+To use for smoking/non-smoking
+
+	<select  name="{$users_extra_fields_field[fields].name}" id="{$users_extra_fields_field[fields].name}">
+		<option value='' {if $users_extra_fields_field[fields].value eq ""} selected="selected"{/if}>Select one</option>
+		<option value='Smoking' {if $users_extra_fields_field[fields].value eq "Smoking"} selected="selected"{/if}>Smoking</option>
+		<option value='Non-smoking' {if $users_extra_fields_field[fields].value eq "Non-smoking"} selected="selected"{/if}>Non-smoking</option>
+	</select>
+
+To use for Marital status
+
+<select  name="{$users_extra_fields_field[fields].name}" id="{$users_extra_fields_field[fields].name}">
+	<option value='' {if $users_extra_fields_field[fields].value eq ""} selected="selected"{/if}></option>
+	<option value='Never married' {if $users_extra_fields_field[fields].value eq "Never married"} selected="selected"{/if}>Never married</option>
+	<option value='Widowed' {if $users_extra_fields_field[fields].value eq "Widowed"} selected="selected"{/if}>Widowed</option>
+	<option value='Divorced' {if $users_extra_fields_field[fields].value eq "Divorced"} selected="selected"{/if}>Divorced</option>
+	<option value='Separated' {if $users_extra_fields_field[fields].value eq "Separated"} selected="selected"{/if}>Separated</option>
+	<option value='Married' {if $users_extra_fields_field[fields].value eq "Married"} selected="selected"{/if}>Married</option>
+</select>

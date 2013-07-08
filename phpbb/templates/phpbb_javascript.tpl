@@ -1,0 +1,1 @@
+if $modulename eq "phpbb"}<script src="./modules/phpbb/js/EditInPlaceAL.js" type="text/javascript"></script>{/if}

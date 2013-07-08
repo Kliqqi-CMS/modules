@@ -1,0 +1,1 @@
+<li><a href="{$my_pligg_base}/module.php?module=phpbb" {if $modulename eq "phpbb"}class="navcur"{else}class="nav"{/if} >phpBB Module</a></li>

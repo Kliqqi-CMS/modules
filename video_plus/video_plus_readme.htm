@@ -1,0 +1,39 @@
+<h2>Video Plus Module (Lightview Edition)</h2>
+<p>
+<strong>Created by:</strong> ChuckRoast and Yankidank<br />
+<strong>Created on:</strong> 12-23-2008<br />
+<strong>Last Updated:</strong> 03-05-2010<br />
+<strong>Requires:</strong> Lightview module v0.2 or above
+</p>
+
+<h3>Description</h3>
+<p>
+Displays the video if the submitted link contains video. If the url is from Youtube, Metacafe or Vimeo it will automatically embed video thumbnails into your site, if it is another service supported it will display a default thumbnail.
+</p>
+
+<h3>Template Use</h3>
+<p>
+If a Youtube url is entered into submit step 1, thumbnails should be automatically be displayed in your template.<br />
+Youtube offers a total of 4 static images that can be used to insert into your template. We have assigned all 4 images as template variables that
+you can use in your link_summary.tpl or video_plus_index.tpl files. Below are examples of each of the template tags followed by a brief description.</p>
+<ol>
+	<li>&lt;img src="{$video_thumbnail_large}" /> produces the only 320x240 pixel thumbnail </li>
+	<li>&lt;img src="{$video_thumbnail}" /> produces the first 120x90 pixel thumbnail </li>
+	<li>&lt;img src="{$video_thumbnail_2}" /> produces the second 120x90 pixel thumbnail </li>
+	<li>&lt;img src="{$video_thumbnail_3}" /> produces the third 120x90 pixel thumbnail </li>
+</ol>
+
+<h3>Revision History</h3>
+<p>
+v0.1 ChuckRoast - First version<br />
+v0.2 ChuckRoast - 12-23-08 Second version<br />
+v0.3 Yankidank - 03-24-2009 - Added Youtube thumbnails and default thumbnail.<br />
+v0.4 Yankidank - 03-26-2009 - Made the default video thumbnail compatible with SEO URLs. Fixed the div size so it wouldn't crop 5px from the image height and width<br />
+v0.5 Yankidank - 04-03-2009 - Made major improvements to the module, removing and fixing video services. Added several new video sites.<br />
+v0.6 Yankidank - 04-03-2009 - Added Jumpcut.com, Cnn.com and CBSnews.com<br />
+v0.7 Yankidank - 05-26-2009 - Added video thumbnails from Metacafe and Vimeo. Each site that offers thumbnails handles it in a different way so they don't match the Youtube 3 thumbnail option.<br />
+v0.8 Yankidank - 06-03-2009 - Youtube now autoplays. Added IceFilms.<br />
+v0.9 Yankidank - 07-26-2009 - CNN and Reuters updates. Both services have slightly changed URLs. The video thumbnail will also now only apply to CNN and Reuters video pages, not their normal articles that don't contain any videos.
+v1.0 Yankidank - 08-05-2009 - Added own3d.tv, including screenshot thumbnails.<br />
+v1.1 Yankidank - 02-12-2010 - Added Redtube.com and Keezmovies.com, including screenshot thumbnails.<br />
+</p>

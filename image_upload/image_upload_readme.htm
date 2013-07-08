@@ -1,0 +1,872 @@
+<style>
+        * { font-size: 12px; font-family: arial, verdana, sans-serif; }
+        #module_readme h3 { font-weight: bold; font-size: 16px; }
+        #module_readme h4 { font-weight: bold; font-size: 14px; }
+        #module_readme li { padding-bottom: 30px; }
+        #module_readme .content { border: solid 1px #dedede; padding: 0px 15px 20px 15px; margin-bottom: 15px; width: 85%; }
+        #module_readme .settings table { border: solid 1px #dedede; }
+        #module_readme .settings .configheader { height: 35px; font-weight: bold; background-color: #dedede; }
+        #module_readme .settings .configsubheader { font-style: italic; }
+        #module_readme .settings .name { font-weight: bold; }
+        #module_readme .settings .default { font-style: italics; }
+        #module_readme .settings .usage { font-size: 11px; }
+</style>
+<a name="top" />
+<div id="module_readme">
+        <div class="content">
+                <h3>Image Upload Module v1.03</h3>
+                Created by: Cent (<a href="http://www.cando-ent.com/">www.cando-ent.com</a>)<br/>
+                Updated by: Social CMS Buzz (<a href="http://socialcmsbuzz.com/">http://socialcmsbuzz.com/</a>)<br/>
+                Created on: 03/03/2008<br/>
+
+                <h4>Description</h4>
+                Updated to work with Social Web CMS.
+        </div>
+        <div class="content">
+                <h3>Image Upload Module v1.00</h3>
+                Created by: Cent (<a href="http://www.cando-ent.com/">www.cando-ent.com</a>)<br/>
+                Created on: 2007/06/18<br/>
+
+                <h4>Description</h4>
+                This module will allow a user to upload a photo and caption (off by default) with their submission.  All images are stored locally on the server and are named the same as the entry id (ie. img_1024.jpg).<br/>
+
+                <h4>HELP SECTIONS</h4>
+                &raquo; <a href="#require">Dependencies / Requirements</a><br/>
+                &raquo; <a href="#features">Features</a><br/>
+                &raquo; <a href="#history">Revision History</a><br/>
+                &raquo; <a href="#todo">Todo</a><br/>
+                &raquo; <a href="#thanks">Special Thanks</a><br/>
+                &raquo; <a href="#setup">Installation</a><br/>
+                &raquo; <a href="#upgrade">Uprading from v. 0.1+</a><br/>
+                &raquo; <a href="#config">Module Configuration</a><br/>
+                &raquo; <a href="#smarty">Using Custom Smarty Variables</a><br/>
+        </div>
+
+        <div class="content">
+                <a name="require" />
+                <h4>Dependencies / Requirements</h4>
+                Extra Fields Enabled (via Admin Configure Pligg)<br/>
+                Thickbox Module (0.3) (used if installed and the module is activated.  Setting can be changed in image_upload_settings.php file)<br/>
+
+                <br/>
+                <a href="#top">Back to top</a>
+        </div>
+
+        <div class="content">
+                <a name="features" />
+                <h4>Features:</h4>
+                - Image upload per entry<br/>
+                - Automatic image resizing and conversion.  Images can be uploaded in JPG, GIF, PNG and WBMP.  All images are resized upon upload to the dimensions set by the site admin.  GIF, PNG and WBMP images are automatically converted to JPG format.  After the new image is sized and saved, the original image the user uploaded is deleted.<br/>
+                - Ability to edit photos (delete, upload new)<br/>
+                - Custom image caption supplied by user (optional).  By default, image caption is taken from link title or can be set to simply "Photo" if custom caption is disabled.<br/>
+                - Admin has control over maximum width/height of uploaded images including file size to prevent PHP from running out of memory while processing images.<br/>
+                - Module can be configured to show image thumbnail/photo or set smarty variables with the thumbnail image source, image filename and image caption.  You can then template this however you like.<br/>
+
+                <a name="history" />
+                <h4>Revision History</h4>
+                v1.03 03/03/2008 Social CMS Buzz - modules_libs.php hack no longer required for v9.9.0, thumbnail now shows on both index and story pages<br/>
+                v1.02 25/01/2008 Social CMS Buzz - Updated code; fix to work with v9.9.0 of pligg<br/>
+                v1.01 2007/06/20 Cent - Updated code; fix issue<br/>
+                v1.00 2007/06/19 Cent - Released version 1.0<br/>
+                v0.95 2007/06/18 Cent - Added ability for user-supplied photo caption (optional).  Also, added code to either show thumbnail or set Smarty variables with data.<br/>
+                v0.94 2007/06/15 Cent - Fixed filename bug<br/>
+                v0.93 2007/06/07 Cent - Updated code (hack really) to allow the module to work in 9.x across the board.  Tested up to Pligg Beta 9.6.<br/>
+                v0.92 2007/06/06 Cent - Fixed image preview mode for edit entry and self-locating rountine for thumb.php.<br/>
+                v0.91 2007/06/05 Cent - Added edit entry functions, image caption, set max limits on image upload and file size, cleaned up code, added more comments and debug info. Debug info now only outputs if set to true and if the user logged in is an Admin.<br/>
+                v0.40 2007/04/12 Cent - Fixed image conversion process.<br/>
+                v0.30 2007/04/11 Cent - Added code for square thumbnails.  Improved documentation readability.<br/>
+                v0.20 2007/04/10 Cent - Fixed code and stability issues<br/>
+                v0.10 2007/04/08 Cent - First version<br/>
+
+                <a name="todo" />
+                <h4>Todo:</h4>
+                - Image retrieved from external URL source<br/>
+                - Multiple image support using single extra field<br/>
+
+                <a name="thanks" />
+                <h4>Special Thanks:</h4>
+                - kbeeveer46, ashdig, aaronpais, adampoots, eboblin, not2serious, revolver, painperdu, sunstardude<br/>
+                - The entire Pligg community for providing great feedback.<br/>
+
+                <br/>
+                <a href="#top">Back to top</a>
+
+        </div>
+
+        <div class="content">
+                <a name="setup" />
+                <h4>Installation</h4>
+
+                Copy the "image_upload" module to your modules directory.<br/><br/>
+
+                <ol>
+
+                <li>Edit: <b>/templates/(your template)/submit_step_2.tpl</b><br/><br/>
+                <b>Look for:</b><br/><br/>
+                <i>&lt;form action="submit.php" method="post" name="thisform" id="thisform"&gt;</i></br><br/>
+                -change to-<br/><br/>
+                <i>&lt;form action="submit.php" method="post" name="thisform" id="thisform" enctype="multipart/form-data"&gt;</i><br/><br/>
+
+                Required for file uploads.<br/><br/><br/>
+
+                In the same file, add:<br/><br/>
+
+                <b>{php}<br/>
+                // Start: Image Upload Module<br/>
+                check_actions('image_upload_form', $vars);<br/>
+                // End: Image Upload Module<br/>
+                {/php}</b><br/><br/>
+
+                Just before:<br/><br/>
+
+                <i>{include file=$tpl_extra_fields.".tpl"}</i>
+
+                </li>
+
+
+
+                <li>Edit: <b>/submit.php</b><br/><br/>
+                <b>Look for:</b><br/><br/>
+                <i>$linkres->store();<br/>
+                tags_insert_string($linkres->id, $dblang, $linkres->tags);</i><br/><br/>
+                And add the below after those 2 lines: <br/><br/>
+                <b>
+                // START:  Image Upload Module<br/>
+                check_actions('image_upload_process', $vars);<br/>
+                // END:  Image Upload Module<br/>
+                </b><br/>
+
+
+                <li>Edit: <b>/templates/(your template)/link_summary.tpl</b><br/><br/>
+                At the end of file, copy and paste the below code above the last 2 DIVs of the file.<br/><br/>
+                <b>
+                {php}<br/>
+                // START: Image Upload Module<br/>
+                check_actions('image_upload_preview', $vars);<br/>
+                // END: Image Upload Module<br/>
+                {/php}<br/>
+                </b><br/>
+
+                This code triggers the Image Upload module to show the image.  Ideally you can place the above code anywhere within <b>link_summary.tpl</b> where you want to image to show up at.<br/>
+                </li>
+
+
+                <li>Edit: <b>/templates/(your template)/editlink_edit_center.tpl</b><br/><br/>
+
+                <b>Look around line 25:</b><br/><br/>
+                <i>&lt;form action="" method="post" id="thisform"&gt;</i><br/><br/>
+                - Change it to -<br/><br/>
+                <i>&lt;form action="" method="post" id="thisform" enctype="multipart/form-data"&gt;</i><br/><br/><br/>
+
+                <b>In the same file, look around line 100:</b><br/><br/>
+                <i>{include file=$tpl_extra_fields.".tpl"}</i><br/><br/>
+                Copy and paste the below code directly above it:<br/><br/>
+                <b>
+                {php}<br/>
+                // START: Image Upload Module<br/>
+                check_actions('image_upload_form', $vars);<br/>
+                // END: Image Upload Module<br/>
+                {/php}<br/>
+                </b><br/>
+
+                This code triggers the Image Upload module to show the upload form.<br/>
+                </li>
+
+
+                <li>Edit: <b>/editlink.php</b><br/><br/>
+                Around line 129, you'll see:<br/><br/>
+                <i>tags_insert_string($linkres->id, $dblang, $linkres->tags);<br/>
+                $linkres-store();</i><br/><br/>
+                Add right below that:<br/><br/>
+                <b>
+                // START: Image Upload Module<br/>
+                check_actions('image_upload_process', $vars);<br/>
+                // END: Image Upload Module<br/>
+                </b><br/>
+
+                This code triggers the Image Upload module to process the a new image upload or retain the original file.<br/>
+                </li>
+                </ol>
+
+                <a href="#top">Back to top</a>
+        </div>
+
+        <div class="content">
+                <a name="upgrade" />
+                <h4>Upgrading from v.0.1+</h4>
+
+                Image Upload v.1.0 no longer requires manually editing the following files:<br/>
+                - <b>/libs/extra_fields.php</b><br/>
+                - <b>/templates/(your template)/submit_extra_fields.tpl</b><br/>
+
+                <br/>
+
+                In previous versions, disabling the module would require that the admin manually "undo" the changes to the above files.  With v1.0, disabling the module in the Admin panel, disables the module as well as uploading photos with entries.<br/><br/>
+
+                If you have installed a previous version of the Image Upload module, it is recommended that you:<br/>
+
+                <ol>
+
+                <li>Edit <b>/libs/extra_fields.php</b><br/><br/>
+                Previously enabled the extra field that will hold the image file name.<br/>
+                <b>Change</b>:<br/><br/>
+                <i>Define('Enable_Extra_Field_1', true)</i><br/>
+                -to-<br/>
+                <i>Define('Enable_Extra_Field_1', false)</i><br/>
+
+                <br/>
+
+                <b>Change:</b><br/><br/>
+                <i>Define('Field_1_Title', 'Select a photo');</i><br/>
+                -to-<br/>
+                <i>Define('Field_1_Title', '');</i><br/>
+
+                <br/>
+
+                <b>Change:</b><br/><br/>
+                <i>Define('Field_1_Instructions', 'Select a JPG, GIF, PNG or WBMP photo from your computer.');</i><br/>
+                -to-<br/>
+                <i>Define('Field_1_Instructions', '');</i>
+                </li>
+
+
+
+                <li>Edit <b>/templates/(your template)/submit_extra_fields.tpl</b><br/><br/>
+                Look for the extra field you enabled previously.  If you are using link_field1 (as with the example above) and comment it out by <b>changing:</b><br/>
+                <i>&lt;input type="file" name="link_field1" id="link_field1" size="20" class="form-full" /&gt;</i><br/>
+                -to-<br/>
+                <i>&lt;!-- &lt;input type="file" name="link_field1" id="link_field1" size="20" class="form-full" /&gt; //--&gt;</i><br/><br/>
+                </li>
+
+                </ol>
+
+                <a href="#top">Back to top</a>
+        </div>
+
+        <div class="content">
+                <a name="config" />
+                <h4>Module Configuration</h4>
+
+                All admin settings are changed in this file.  Modifying these settings can be trial and error to fit the design of your site.<br/><br/>
+
+                <li>Edit <b>/modules/image_upload/image_upload_settings.php</b><br/><br/>
+
+                <table border="1" cellpadding="4" cellspacing="0" width="100%" class="settings">
+                        <tbody>
+                                <tr>
+                                        <td colspan="4" class="configheader">Server Paths</td>
+                                </tr>
+                                <tr class="configsubheader">
+                                        <td valign="top">
+                                                Module Setting
+                                        </td>
+                                        <td valign="top">
+                                                Default Setting
+                                        </td>
+                                        <td valign="top">
+                                                Options
+                                        </td>
+                                        <td valign="top">
+                                                Usage
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_basedir
+                                        </td>
+                                        <td valign="top" class="default">
+                                                $_SERVER['DOCUMENT_ROOT'].$mypliggbase
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Used to know where Pligg's installed at.  It's a little hack as thumb.php uses part of it.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">Debug Mode</td>
+                                </tr>
+                                <tr class="configsubheader">
+                                        <td valign="top">
+                                                Module Setting
+                                        </td>
+                                        <td valign="top">
+                                                Default Setting
+                                        </td>
+                                        <td valign="top">
+                                                Options
+                                        </td>
+                                        <td valign="top">
+                                                Usage
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_debugmode
+                                        </td>
+                                        <td valign="top" class="default">
+                                                false
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true / false
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Turning on debug mode will output messages from the module about what its currently doing and information about the file being processed.  This should be turned off in a production environment as it outputs a lot of data including full path directories.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">Errors and Max Constraints For Uploads</td>
+                                </tr>
+                                <tr class="configsubheader">
+                                        <td valign="top">
+                                                Module Setting
+                                        </td>
+                                        <td valign="top">
+                                                Default Setting
+                                        </td>
+                                        <td valign="top">
+                                                Options
+                                        </td>
+                                        <td valign="top">
+                                                Usage
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_error_post
+                                        </td>
+                                        <td valign="top" class="default">
+                                                You can still submit this entry and edit it later with a smaller image or click MODIFY to try a different image.
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Basic text which is part of any error code generated that they can continue to submit the entry and upload an image later if the one they attempted was causing problems.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_upload_maxwidth
+                                        </td>
+                                        <td valign="top" class="default">
+                                                1200
+                                        </td>
+                                        <td valign="top" class="default">
+                                                numeric
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Maximum width of any images uploaded by users.  PHP's memory limit needs to be increased in the PHP.ini file from the default 12MB to handle processing large images.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_upload_maxheight
+                                        </td>
+                                        <td valign="top" class="default">
+                                                1200
+                                        </td>
+                                        <td valign="top" class="default">
+                                                numeric
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Maximum height of any images uploaded by users.  Same as maximum width note.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_upload_maxsize
+                                        </td>
+                                        <td valign="top" class="default">
+                                                2
+                                        </td>
+                                        <td valign="top" class="default">
+                                                numeric
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Maximum filesize for image uploads.  See maximum width/height note above.  To accept a 2400x2400 image for processing, PHP's memory limit needs to be increased to 32MB in most cases.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">Module Runtime Settings</td>
+                                </tr>
+                                <tr class="configsubheader">
+                                        <td valign="top">
+                                                Module Setting
+                                        </td>
+                                        <td valign="top">
+                                                Default Setting
+                                        </td>
+                                        <td valign="top">
+                                                Options
+                                        </td>
+                                        <td valign="top">
+                                                Usage
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_showerrors
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true/false
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Whether or not to output helpful error messages to the user.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_imagedir
+                                        </td>
+                                        <td valign="top" class="default">
+                                                images/
+                                        </td>
+                                        <td valign="top" class="default">
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                The path from your Pligg installation to an images folder within your Pligg directory -- must include the trailing slash.  This directory must be writable so chmod it to 755.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_gdversion
+                                        </td>
+                                        <td valign="top" class="default">
+                                                2
+                                        </td>
+                                        <td valign="top" class="default">
+                                                1 or 2
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                To create thumbnails, GD support needs to be enabled in PHP.  Most PHP installations has GD 2.x installed.  If your host only has GD 1.x installed, change this to <b>1</b>.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_jpg_quality
+                                        </td>
+                                        <td valign="top" class="default">
+                                                80
+                                        </td>
+                                        <td valign="top" class="default">
+                                                1-100
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                By default, all images larger than the fullsize width / height you indicate will be resized.  All GIF, PNG and WBMP images will be converted to JPG format.  In either case, this sets the JPG quality of the final image.  Higher numbers = less compression and larger file size.  Lower numbers = more compression and smaller file size.  The more compression, the more artifacts will be visible in the image.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_use_thickbox
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true / false
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                If set to true, Image Upload will attempt to use Thickbox module to overlay image in a "lightbox" effect.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_use_thumb
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true / false
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                If set to true, module will show a thumbnail.  If false, the fullsize image will be shown.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_thumb_width
+                                        </td>
+                                        <td valign="top" class="default">
+                                                150
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                This is the maximum width the thumbnail should be.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_thumb_height
+                                        </td>
+                                        <td valign="top" class="default">
+                                                150
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                This is the maximum height the thumbnail should be.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_thumb_square
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true / false
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                If set to true, the thumbnail will be the width x height set for thumbnails with as little scaling as possible.  Thumbnail will be cropped.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_fullsize_prefix
+                                        </td>
+                                        <td valign="top" class="default">
+                                                img_
+                                        </td>
+                                        <td valign="top" class="default">
+                                                (text)
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                The prefix to add to images uploaded.  By default all images are saved as <b>img_X.jpg</b> where X is the story ID.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_fullsize_maxtoggle
+                                        </td>
+                                        <td valign="top" class="default">
+                                                w
+                                        </td>
+                                        <td valign="top" class="default">
+                                                w / h
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                If thumbnails are scaled and module_imageupload_thumb_square is false, then this allows you to set the maximum width or maximum height of the thumbnail.  As images are rarely square, this will force the thumbnail routine to be sure it adheres to one dimension.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_fullsize_width
+                                        </td>
+                                        <td valign="top" class="default">
+                                                500
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Maximum width any uploaded images should be.  Any image wider than this value is scaled in proportion to the maximum height (below).
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_fullsize_height
+                                        </td>
+                                        <td valign="top" class="default">
+                                                500
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Maximum height any uploaded pictures should be.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">Internal Pligg Field Names</td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_filename_field
+                                        </td>
+                                        <td valign="top" class="default">
+                                                link_field1
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Very important.  As Extra Fields need to be enabled in the Admin, indicating the link_field you are using will allow the module to update the database with the correct image filename when completed.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_filename_field2
+                                        </td>
+                                        <td valign="top" class="default">
+                                                submit_link_field1
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Very important.  This should end in the same number as your link_fieldX above.  Editing entries uses a different naming convention, so we need to set that variable here.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_caption_field
+                                        </td>
+                                        <td valign="top" class="default">
+                                                link_field2
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                (Optional) If custom captions is enabled, this is the link_field you are using to allow the module to store the custom caption by the user.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_caption_field2
+                                        </td>
+                                        <td valign="top" class="default">
+                                                submit_link_field2
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Very important.  This should end in the same number as your link_fieldX above for caption field.  Editing entries uses a different naming convention, so we need to set that variable here.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">Custom Image Caption</td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_customcaptions
+                                        </td>
+                                        <td valign="top" class="default">
+                                                false
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true/false
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                If set to false (default), the image caption will be either the story title or 'Photo' as set in module_imageupload_img_caption.  If set to true, the user will be provided with a form field to enter a caption for the image.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_customcaption_fieldlength
+                                        </td>
+                                        <td valign="top" class="default">
+                                                60
+                                        </td>
+                                        <td valign="top" class="default">
+                                                (numeric)
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                The number of characters for the caption field form element.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_customcaptions_maxlength
+                                        </td>
+                                        <td valign="top" class="default">
+                                                255
+                                        </td>
+                                        <td valign="top" class="default">
+                                                (numeric)
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                The maximum number of characters for the caption.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">Form Elements</td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_field_title
+                                        </td>
+                                        <td valign="top" class="default">
+                                                Photo Upload (optional):
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                This is the name of the HTML form field title.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_field_instructions
+                                        </td>
+                                        <td valign="top" class="default">
+                                                Select a JPG, GIF, PNG or WBMP photo from your computer.
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                This is the instructions for the HTML form for uploading photos.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_caption_title
+                                        </td>
+                                        <td valign="top" class="default">
+                                                Photo Caption (optional):
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                This is the name of the HTML form field title.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_caption_instructions
+                                        </td>
+                                        <td valign="top" class="default">
+                                                Please enter a caption for this photo (Max. XX characters)
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                This is the instructions user-supplied photo caption.  XX is the maximum number of characters for the caption field as set in module_imageupload_customcaption_maxlength.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">Smarty Info</td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_usesmarty
+                                        </td>
+                                        <td valign="top" class="default">
+                                                false
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true/false
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Set this to true to disable including the thumbnail, image and caption within each link summary and instead, set a number of Smarty variables with this data (see Using Custom Smarty).  Set this to false, for normal operation of the module.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">Module Image Styling / Linking</td>
+                                </tr>
+                                <tr class="configsubheader">
+                                        <td valign="top">
+                                                Module Setting
+                                        </td>
+                                        <td valign="top">
+                                                Default Setting
+                                        </td>
+                                        <td valign="top">
+                                                Options
+                                        </td>
+                                        <td valign="top">
+                                                Usage
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_legendtext
+                                        </td>
+                                        <td valign="top" class="default">
+                                                (HTML Code)
+                                        </td>
+                                        <td valign="top" class="default">
+
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                This is the legend text that appears below a thumbnail to inform the user to clic the image for  larger version.  This can contain properly formatted and escaped HTML code.
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">Thumbnail Generator Settings (Do not change unless you understand HTML)</td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">Image Caption</td>
+                                </tr>
+                                <tr class="configsubheader">
+                                        <td valign="top">
+                                                Module Setting
+                                        </td>
+                                        <td valign="top">
+                                                Default Setting
+                                        </td>
+                                        <td valign="top">
+                                                Options
+                                        </td>
+                                        <td valign="top">
+                                                Usage
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td valign="top" class="name">
+                                                module_imageupload_img_caption
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true
+                                        </td>
+                                        <td valign="top" class="default">
+                                                true / false
+                                        </td>
+                                        <td valign="top" class="usage">
+                                                Set this to true and the image caption will be the story's title.  If false, the image caption will be "Photo."
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">Styling (Do not change unless you understand HTML)</td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">Thickbox (Do not change unless you understand HTML)</td>
+                                </tr>
+                                <tr>
+                                        <td colspan="4" class="configheader">No Thickbox (Do not change unless you understand HTML)</td>
+                                </tr>
+                        </tbody>
+                </table>
+
+                <br/>
+                There are additional settings, however, for most people they will not have to adjust them.  Changing them may cause unexpected results.<br/>
+                </ol>
+
+                <br/>
+                <a href="#top">Back to top</a>
+        </div>
+
+        <div class="content">
+                <a name="smarty" />
+                <h4>Using Custom Smarty Variables</h4>
+
+                Normally, you will not have to worry about Smarty variables but in a perfect world, you should have access to the data from the Image Upload module to further customize.<br/><br/>
+
+                If <b>module_imageupload_usesmarty</b> is enabled by setting this value to <b>true</b> in the image_upload_settings.php file, the module will not display the image thumbnail, image and caption.  Instead, it will set Smarty variables with this data and you will be able to manipulate/display it yourself.<br/><br/>
+
+                The Smarty variables that will be set are:<br/><br/>
+                <b>module_imageupload_thumbnail_src</b> - URL to thumbnail<br/>
+                <b>module_imageupload_image_filename</b> - filename of image<br/>
+                <b>module_imageupload_image_caption<b/> - caption of image (custom, story title or 'Photo')<br/>
+
+
+                <br/>
+                <a href="#top">Back to top</a>
+
+        </div>
+</div>

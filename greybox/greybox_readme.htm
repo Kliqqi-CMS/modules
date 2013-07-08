@@ -1,0 +1,73 @@
+<style type="text/css">
+.code {
+background:#efefef;
+padding:8px 10px;
+margin:2px 15px;
+line-height:22px;
+}
+h3,h2 {
+margin:12px 0 2px 0;
+padding:0;
+}
+h4 {
+margin:12px 0 2px 0;
+padding:0;
+}
+</style>
+<h2>GreyBox Javascript Lightbox</h2>
+<p><strong>Created by:</strong> Yankidank<br>
+<strong>Created on:</strong> 07/16/2009
+</p>
+
+<h3>Includes</h3>
+<ul>
+	<li><a href="http://orangoo.com/labs/GreyBox/" target="_blank">GreyBox</a> v5.53</li>
+</ul>
+
+<h3>About</h3>
+<p>Greybox offers a javascript library independent solution for displaying lightbox popups. This means that you can use it in addition to having other javascript libraries installed like jQuery or Mootools without a major conflict that would break javascript features.</p>
+
+<h3>Usage</h3>
+<p>
+To trigger GreyBox you'll only need to append a rel tag on your &lt;a&gt; tags:
+</p>
+
+<h4>Example Upload Module Settings</h4>
+If you use the Pligg Upload module you should set the Manual Thumbnail HTML format field to:
+<div class="code">
+&lt;a href="{target}"rel="gb_imageset[gallery]" &gt;&lt;img src="{path}" /&gt;&lt;/a&gt;
+</div>
+
+<h4>Example 500x500 Popup Link</h4>
+<div class="code">
+&lt;a href="http://google.com/" title="Google" rel="<span style="background:#FFFFD4;">gb_page_center[500, 500]</span>"&gt;
+Your Trigger Link Text Here &lt;/a&gt;
+</div>
+
+<h4>Example Full Page Popup Link</h4>
+<div class="code">
+&lt;a href="http://google.com/" title="Google" rel="<span style="background:#FFFFD4;">gb_page_fs[]</span>"&gt;
+Your Trigger Link Text Here &lt;/a&gt;
+</div>
+
+<h4>Group of Links</h4>
+<div class="code">
+&lt;a href="http://google.com/" title="Google" rel="<span style="background:#FFFFD4;">gb_pageset[search_sites]</span>"&gt; Google &lt;/a&gt; <br />
+&lt;a href="http://yahoo.com/" title="Google" rel="<span style="background:#FFFFD4;">gb_pageset[search_sites]</span>"&gt; Yahoo &lt;/a&gt; <br />
+&lt;a href="http://live.com/" title="Google" rel="<span style="background:#FFFFD4;">gb_pageset[search_sites]</span>"&gt; Microsoft &lt;/a&gt;
+</div>
+
+<h4>Image Gallery Group</h4>
+<div class="code">
+&lt;a href="/image1.jpg" title="Google" rel="<span style="background:#FFFFD4;">gb_imageset[image_example]</span> title="Image 1" "&gt; &lt;img src="/image1.gif" alt="Image 1" &gt; &lt;/a&gt; <br />
+&lt;a href="/image2.jpg" title="Google" rel="<span style="background:#FFFFD4;">gb_imageset[image_example]</span> title="Image 2" "&gt; &lt;img src="/image2.gif" alt="Image 2" &gt; &lt;/a&gt; <br />
+&lt;a href="/image3.jpg" title="Google" rel="<span style="background:#FFFFD4;">gb_imageset[image_example]</span> title="Image 3" "&gt; &lt;img src="/image3.gif" alt="Image 3" &gt; &lt;/a&gt;
+</div>
+
+<p>
+Please see the <a href="http://orangoo.com/labs/GreyBox/" target="_blank">official GreyBox Homepage</a> for more examples and updated code.
+</p>
+
+<h3>Revision History</h3>
+<p><strong>v5.53</strong> 07/16/2009 - First Release <br />
+</p>

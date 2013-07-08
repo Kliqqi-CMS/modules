@@ -1,0 +1,39 @@
+/*
+this class is for the lower bar container.
+It does really require any styling
+*/
+.tbWrapper{
+
+}
+
+/*
+This is the progress bar container
+Width is set with javascript, but those value can be modified
+Try to keep the button's and preogres bar's margin-left the same for better results
+*/
+.tbProgress{
+	height:1em;
+	border:1px inset #FF7A19;
+	background-color:#FFF;
+	padding:4px 0;
+}
+
+/*
+this is the actual progress indicator, inside the porgressbar container
+Except the background color, you probably don't want to mess up the other properties
+You can set a background image if you want
+*/
+.tbProgressBar{
+	background-color:#FFB119;
+}
+
+/*
+chracters counter. Same here, except the text color, you don't want to modify any other property
+*/
+.tbCounter{
+	color:#000;
+	font-family:Trebuchet MS, Helvetica, sans-serif;
+	font-size:0.9em;
+	font-weight:bold;
+	padding-top:2px;
+}

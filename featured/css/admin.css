@@ -1,0 +1,93 @@
+#featurify {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+#featurify a:link, #featurify a:visited {
+	color:#069;
+	font-weight:normal;
+	text-decoration:none;
+}
+#featurify a:hover {
+	color:#333;
+}
+#featurify p {
+	margin:20px 0;
+	padding:0;
+}
+#featurify h3 {
+	font-size:18px;
+	font-weight:normal;
+}
+#featurify fieldset {
+	background:#fff;
+	border:1px solid #a6c5e4;
+	padding:0 20px 20px 20px;
+}
+#featurify legend {
+	background:#e9f3fd;
+	border:1px solid #a6c5e4;
+	color:#333;
+	font-size:16px;
+	font-weight:bold;
+	padding:5px 10px;
+}
+#featurify table {
+	width:100%;
+	border-top:1px solid #e5eff8;
+	border-right:1px solid #e5eff8;
+	margin:0 auto;
+	border-collapse:collapse;
+}
+#featurify th {
+	border-bottom:1px solid #e5eff8;
+	border-left:1px solid #e5eff8;
+	padding:.6em 1em;
+	text-align:left;
+}							
+#featurify thead th {
+	background:#f4f9fe;
+	color:#5491c8;
+}
+#featurify td {
+	color:#556e84;
+	border-bottom:1px solid #e5eff8;
+	border-left:1px solid #e5eff8;
+	padding:.5em 1em;
+}
+#featurify input[type=text] {
+	background:#fff;
+	border:1px solid #a6c5e4;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	padding:3px;
+	width:200px;
+}
+#featurify input[type=submit] {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	padding:3px;
+}
+#featurify li {
+	font-size:11px;
+	padding:3px 0;
+}
+#featurify .red {
+	color:#f00;
+}
+#featurify .error {
+	background:#fdd9d9 url(../images/error.gif) 10px 40% no-repeat;
+	border:1px solid #fba3a3;
+	color:#d80303;
+	font-size:12px;
+	font-weight:bold;
+	padding:5px 5px 5px 30px;
+}
+#featurify .success {
+	background:#e4fcd9 url(../images/enabled.gif) 10px 40% no-repeat;
+	border:1px solid #bffda3;
+	color:#35a502;
+	font-size:12px;
+	font-weight:bold;
+	padding:5px 5px 5px 30px;
+}

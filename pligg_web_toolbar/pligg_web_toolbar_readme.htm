@@ -1,0 +1,38 @@
+<style type="text/css">
+h2 {margin:0;padding:0;}
+h2 a {text-decoration:none;}
+h2 a:hover {text-decoration:underline;}
+p {margin:8px 0 4px 0;padding:0;}
+p a {text-decoration:none;}
+p a:hover {text-decoration:underline;}
+
+</style>
+<br />
+<h2><a href="http://forums.pligg.com/free-modules/19542-pligg-web-toolbar-module-pligg-content-management-system-1-0-1-a.html">Pligg Web Toolbar</a></h2>
+<p>
+<strong>Created by:</strong> <a href="http://forums.pligg.com/members/goopensource.html">GoOpenSource</a> and <a href="http://www.ericheikkinen.com">Eric "Yankidank" Heikkinen</a><br>
+<strong>Created:</strong> 09/15/2009<br>
+<strong>Last Updated:</strong> 09/16/2009<br>
+<strong>Requires:</strong> Nothing
+</p>
+<br />
+<h2>Installation</h2>
+<p>
+Upload the module and install it from the Admin > Modules page. If you are using URL Method 2 SEO URLs on your site you may need to add the following line to your .htaccess file. Pligg version 1.0.2 and above will already include this line in the htaccess file.
+</p>
+<p style="padding:10px;background:#eee;border:1px solid #bbb;margin:5px;">
+RewriteRule ^toolbar/(\d+)/?$ modules/pligg_web_toolbar/toolbar.php?id=$1
+</p>
+<br />
+<h2>Description</h2>
+<p>This module will turn your external urls into Toolbar urls that will add a toolbar to the top of all external stories. This keeps users on your site as they read stories and gives them access to the vote count, comment count, story url, homepage and bookmarking tools.</p>
+<br />
+<h2>Known Bugs and Future Features</h2>
+<ul>
+	<li>Disabling the module from the Admin panel doesn't actually disable the toolbar. Please just disable it from the module management page.</li>
+	<li>Stories that do not have a URL (left blank or as http:// in submit step 1) result in an error popup.</li>
+	<li>A working vote button needs added so users can vote from the toolbar page</li>
+</ul>
+<br />
+<h2>Revision History</h2>
+v1.0  09/16/2009 - First Version

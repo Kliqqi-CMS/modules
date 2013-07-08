@@ -1,0 +1,19 @@
+/* Storylist Share */
+.share-storylist { position:relative;display:inline; }
+.share-hover { background:url(storylist-share.png) no-repeat; width:138px; height:106px; position:absolute; top:12px; left:-35px !important; z-index:100; display:none; }
+.share-diggbar-url { position:absolute; top:24px; left:14px; padding:5px; text-decoration:none; background:#fff; width:98px; border:1px solid #c6c6c6; -moz-border-radius:4px; -webkit-border-radius:4px; }
+.share-hover span { font-size:85%; font-weight:normal; color:#9ab9d5; display:block; margin-top:-1px; }
+ul.share actions, ul.share-actions li { list-style:none; }
+ul.share-actions li a { text-indent:-999px; width:40px; height:26px; position:absolute; top:63px;} 
+.share-actions li.facebook a { left:48px; width:42px;}
+.share-actions li.email a {   left:7px;}
+.share-actions li.twitter a {left:91px; }
+
+/* Storylist Share Email Box */
+#share-dialog { display:none; }
+.share-email a.email-suggestion { background:#edf7e6 url(/img/lightbox-email-apps.png) 460px 7px no-repeat; display:block; margin:-16px -17px 15px; padding:15px 15px 15px 65px; font-size:1.15em; font-weight:bold; text-decoration:none; color:#64a715; border-bottom:1px solid #daecb0; }
+.share-email a.email-suggestion:hover { color:#000033; }
+.share-email label { float:left !important;  display:block; position:absolute;  color:#777; }
+.share-email input[type="text"] { padding:5px; -moz-border-radius:3px !important; -webkit-border-radius:3px !important; color:#777; margin:0 0 10px 0; width:490px; margin-left:50px; border:1px solid #ccc; font-size:1.1em; }
+.share-email textarea { width:530px; padding:10px; height:12em; margin:10px 0 5px 0; font-size:100%; background:#fffdea; border:1px solid #dcd069; color:#39340b; }
+.share-test-email .dialog-tray { text-align:left; }

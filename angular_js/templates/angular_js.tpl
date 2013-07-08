@@ -1,0 +1,1 @@
+{literal}<script type="text/javascript" src="{/literal}{$my_base_url}{$my_pligg_base}/modules/angular_js/angular/src/Angular.js{literal}"></script>{/literal}

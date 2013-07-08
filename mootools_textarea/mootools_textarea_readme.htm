@@ -1,0 +1,41 @@
+<h2>Mootools Textarea</h2>
+<hr />
+<p><strong>Created by:</strong> Yankidank<br />
+<strong>Created on:</strong> July 24, 2009<br />
+<strong>Last Updated:</strong> September 01, 2009<br />
+<strong>Requires:</strong> Mootools Javascript Library
+</p>
+
+<h3>Description</h3>
+<p>
+This module is based on the <a href="http://tools.uvumi.com/textarea.html" target="_blank">UvumiTools Textarea</a> Mootools script. It will both add a counter below the submission and comment textareas and expand the height of the text area as more content is added to it.
+</p>
+
+<h3>Suggested Template Edits</h3>
+<p>These template edits are not required for this module to function, but they will remove the character count tool from Pligg's story submission process. The character count is no longer needed since this module basically replaces the feature with a count down, rather than the Pligg-based count up method.</p>
+<p>Remove from your template's submit_step_2.tpl:<br />
+<blockquote style="margin:5px;background:#eee;border:1px solid #bbb;padding:10px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function textCounter(field, countfield, maxlimit) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (field.value.length > maxlimit) // if too long...trim it!<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field.value = field.value.substring(0, maxlimit);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// otherwise, update 'characters left' counter<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;countfield.value = maxlimit - field.value.length;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+function counter(text)<br />
+{<br />
+text.form.text_num.value = text.value.length;<br />
+}<br />
+</blockquote>
+
+Also remove this line found further down on submit_step_2.tpl:
+<blockquote style="margin:5px;background:#eee;border:1px solid #bbb;padding:10px;">
+&lt;input readonly type=text name=remLen size=3 maxlength=3 value="400">{#PLIGG_Visual_Submit2_SummaryCharactersLeft#}
+</blockquote>
+</p>
+
+<h3>Revision History</h3>
+<p>
+<strong>v0.2</strong> Yankidank - Fixed numbers fetching from database<br />
+<strong>v0.1</strong> Yankidank - First version
+</p>

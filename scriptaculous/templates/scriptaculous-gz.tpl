@@ -1,0 +1,9 @@
+<script src="./modules/scriptaculous/js/prototype.js.gz" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/scriptaculous.js.gz" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/builder.js.gz" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/controls.js.gz" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/dragdrop.js.gz" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/EditInPlace.js.gz" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/effects.js.gz" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/slider.js.gz" type="text/javascript"></script>
+<script src="./modules/scriptaculous/js/sound.js.gz" type="text/javascript"></script>

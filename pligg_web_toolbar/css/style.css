@@ -1,0 +1,15 @@
+html {overflow: auto;}
+html, body, iframe {margin: 0px; padding: 0px; height: 99%; border: none;} 
+body{ font-family: verdana, Arial, Helvetica, Sans-Serif; font-size:10px; margin:0px 0px 0px 0px; height:100%;overflow: hidden}
+tr td {font-size:10px; text-align:center;}
+.title{ font-weight:bold;font-size:12px; color:#336699;}
+.votes{ display:block;width:75px; height:21px; text-align:center; font-size: 12px; font-weight:bold;}
+.votes_votecount {padding-top:3px;}
+.main {min-width:450px;overflow:auto;}
+.main a {text-decoration:none;color:#336699;}
+.main a:hover {text-decoration:none;color:#000000;}
+.bar{border-bottom: 1px solid #777777;}
+.main {text-align:left; padding-left:10px}
+.grey { color: #777;}
+.grey a { color: #777;}
+iframe {display: block; width: 100%; border: none; overflow-y: auto; overflow-x: hidden;} 

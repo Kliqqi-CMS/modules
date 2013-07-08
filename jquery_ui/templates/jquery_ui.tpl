@@ -1,0 +1,2 @@
+{literal}<link type="text/css" href="{/literal}{$my_base_url}{$my_pligg_base}/modules/jquery_ui/{literal}css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />{/literal}
+{literal}<script type="text/javascript" src="{/literal}{$my_base_url}{$my_pligg_base}/modules/jquery_ui/{literal}js/jquery-ui-1.8.23.custom.min.js"></script>{/literal}

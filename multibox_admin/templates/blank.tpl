@@ -1,0 +1,1 @@
+{config_load file=multibox_admin_lang_conf}

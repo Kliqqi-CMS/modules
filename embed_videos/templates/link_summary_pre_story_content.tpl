@@ -1,0 +1,1 @@
+{embedvideos}{$displayed_story}

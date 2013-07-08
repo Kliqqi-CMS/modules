@@ -1,0 +1,1 @@
+<script src="{$my_base_url}{$my_pligg_base}/modules/mootools/js/mootools-min.js" type="text/javascript"></script>

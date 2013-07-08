@@ -1,0 +1,1 @@
+<img src="{$my_pligg_base}/templates/admin/images/manage_formulas.gif" align="absmiddle"/> <a href="{$URL_admin_totals}">Modify Totals</a><br/>

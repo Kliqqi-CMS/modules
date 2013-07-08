@@ -1,0 +1,21 @@
+<style type="text/css">
+blockquote {padding:8px;background:#eee;border:1px solid #ccc;}
+</style>
+
+<h2>LDAP Authentication v0.10</h2>
+
+<h3>Description</h3>
+<p>Authenticates a user against an LDAP Server.</p>
+
+<h3>Installation</h3>
+<p>
+This module requires that you modify 1 core Pligg file. Please open /libs/login.php and find the line:
+</p>
+<blockquote>
+		if ($user->user_id > 0 && $user->user_pass === $saltedpass && $user->user_lastlogin != "0000-00-00 00:00:00"  && $user->user_enabled) {
+</blockquote>
+<p>Replace it with:</p>
+<blockquote>
+		if ($user->user_id > 0 && $user->user_pass === $saltedpass && $user->user_enabled) {
+</blockquote>
+<p>This change removes the ability for Pligg to block users who have not validated their email address yet.</p>
