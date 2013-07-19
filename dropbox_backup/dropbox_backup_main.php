@@ -25,19 +25,18 @@ function dropbox_backup_showpage(){
 		if ($_POST['submit'])
 		{
 			misc_data_update('dropbox_backup_email', sanitize($_REQUEST['dropbox_backup_email'], 3));
-			//misc_data_update('dropbox_backup_save', sanitize($_REQUEST['dropbox_backup_save'], 3));
-			//$dropbox_backup_save=escapeshellcmd(get_misc_data('dropbox_backup_save'));
-			//if ($dropbox_backup_save == "Yes"){
+			/*
+			misc_data_update('dropbox_backup_save', sanitize($_REQUEST['dropbox_backup_save'], 3));
+			$dropbox_backup_save=escapeshellcmd(get_misc_data('dropbox_backup_save'));
+			if ($dropbox_backup_save == "Yes"){
 				misc_data_update('dropbox_backup_pass', sanitize($_REQUEST['dropbox_backup_pass'], 3));
-			//} else {
-			//	misc_data_update('dropbox_backup_pass', '');
-			//}
+			} else {
+				misc_data_update('dropbox_backup_pass', '');
+			}
+			*/
 			misc_data_update('dropbox_backup_dir', sanitize($_REQUEST['dropbox_backup_dir'], 3));
-		}
-		
-		// Perform Backup
-		if ($_GET['action'] == 'backup') {
-		
+			$dropbox_pass = sanitize($_REQUEST['dropbox_backup_pass'], 3);
+
 			// Current Directory
 			$path = "admin/backup/";
 			$db_path = "modules/dropbox_backup/backup/";
@@ -124,7 +123,7 @@ function dropbox_backup_showpage(){
 					
 					// Send to Dropbox
 					$dropbox_email=escapeshellcmd(get_misc_data('dropbox_backup_email'));	// Dropbox email address
-					$dropbox_pass=escapeshellcmd(get_misc_data('dropbox_backup_pass'));   	// Dropbox password
+					//$dropbox_pass=escapeshellcmd(get_misc_data('dropbox_backup_pass'));   	// Dropbox password
 					//$dropbox_pass_save=escapeshellcmd(get_misc_data('dropbox_backup_save'));// Save password?
 					$dropbox_dir=escapeshellcmd(get_misc_data('dropbox_backup_dir'));		// DropBox directory (optional) - Folder on the Dropbox 
 					include('DropboxUploader.php');

@@ -7,7 +7,7 @@ if(defined('mnminclude')){
 	// index.php becomes 'index' and new.php becomes 'new'
 	$do_not_include_in_pages = array();
 
-	$include_in_pages = array('module','admin_backup','admin_index','admin_widgets','admin_modules','admin_links','admin_comments','admin_users','admin_config','admin_categories','admin_page','admin_group','admin_editor');
+	$include_in_pages = array('all');
 	if( do_we_load_module() ) {		
 		module_add_action_tpl('tpl_header_admin_main_links', dropbox_backup_tpl_path . 'dropbox_backup_admin_link.tpl');
 		include_once(mnmmodules . 'dropbox_backup/dropbox_backup_main.php');

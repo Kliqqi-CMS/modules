@@ -14,6 +14,7 @@
 
 <legend>{#PLIGG_Dropbox_Backup#}</legend>
 <p>{#PLIGG_Dropbox_Backup_Instructions#}</p>
+<p>{#PLIGG_Dropbox_Backup_Error_Warning#}</p>
 <br />
 <div class="span8">
 	<form action="" method="POST" id="thisform">
@@ -32,8 +33,7 @@
 				<tr>
 					<td><label>{#PLIGG_Dropbox_Backup_Password#}:</label></td>
 					<td>
-						<input type="password" name="dropbox_backup_pass" class="span12" value="{$settings.dropbox_backup_pass}" />
-						{* <input type="checkbox" value="Yes" name="dropbox_backup_save" {if $settings.dropbox_backup_save eq "Yes"}checked="checked"{/if} /> <span class="help-inline">Save your unencrypted password for next time?</span> *}
+						<input type="password" name="dropbox_backup_pass" class="span12" value="" />
 					</td>
 				</tr>
 				<tr>
@@ -46,8 +46,7 @@
 				<tr>
 					<td></td>
 					<td>
-						<input type="submit" name="submit" value="{#PLIGG_Dropbox_Backup_Submit#}" class="btn btn-primary" />
-						<input type="button" {if $settings.dropbox_backup_email eq "" || $settings.dropbox_backup_pass eq ""}disabled="disabled"{/if} value="{#PLIGG_Dropbox_Backup_Perform#}" class="btn btn-success" onClick="parent.location='{$my_pligg_base}/module.php?module=dropbox_backup&action=backup'" />
+						<input type="submit" name="submit" value="{#PLIGG_Dropbox_Backup_Perform#}" class="btn btn-success" />
 					</td>
 				</tr>
 			</tbody>
