@@ -4,6 +4,7 @@
 		<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', {$settings.analytics_id}]);
+		  _gaq.push(['_setDomainName', '{$my_base_url|replace:'www.':''|replace:'https://':''|replace:'http://':''}']);
 		  _gaq.push(['_trackPageview']);
 		{literal}
 		  (function() {

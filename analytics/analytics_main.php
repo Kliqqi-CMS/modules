@@ -23,8 +23,8 @@ function analytics_showpage(){
 		if ($_POST['submit'])
 		{
 			$_REQUEST = str_replace('"',"'",$_REQUEST);
-			$analytics_input = substr($_REQUEST['analytics_id'], 0, 10);  // Shorten input to 10 characters (length of Analytics IDs)
-			if (strlen($analytics_input) != '10'){
+			$analytics_input = substr($_REQUEST['analytics_id'], 0, 14);  // Shorten input to 10 characters (length of Analytics IDs)
+			if (strlen($analytics_input) != '14'){
 				$msg = "Error! The value entered was not 10 characters in length. Please try again.";
 			}
 			misc_data_update('analytics_id', mysql_real_escape_string($analytics_input));

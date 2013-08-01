@@ -17,7 +17,7 @@
 
 <form action="" method="POST" id="thisform">
 	<p>{#Analytics_Form_Label#}</p>
-	<input type="text" name="analytics_id" {if $settings.analytics_id != ''}value="{$settings.analytics_id}"{else}placeholder="UA-#####-#"{/if} size="20" maxlength="10" />
+	<input type="text" name="analytics_id" {if $settings.analytics_id != ''}value="{$settings.analytics_id}"{else}placeholder="UA-#####-#"{/if} size="20" maxlength="14" />
 	<input type="submit" name="submit" value="{#Analytics_Form_Submit#}" class="btn btn-primary" />
 </form>
 
