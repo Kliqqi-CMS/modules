@@ -6,7 +6,7 @@
 //              http://www.affero.org/oagpl.html 	 
 // AFFERO GENERAL PUBLIC LICENSE is also included in the file called "COPYING".
 
-include_once('Smarty.class.php');
+include_once('internal/Smarty.class.php');
 $main_smarty = new Smarty;
 
 require('class.rssimport.php'); 
