@@ -9,17 +9,20 @@
 		<li>Click on "Add a new feed."</li>
 		<li>Enter feed URL in "Feed URL." input</li>
 		<li>Click on the "Edit" link to configure the feed settings</li>
-		<li>Click "Add a new field link" to map the fields of the RSS feed to your Pligg site fields. For example:</li>
+		<li>Click "Add a new field link" to map the fields of the RSS feed to your Pligg site fields. For example:
 			<ul>
 				<li>- link_title</li>
 				<li>- link_url</li>
 				<li>- link_content</li>
 			</ul>
+		</li>
+		<li>Set up a cron job to access the /modules/rss_import/import.php file to automatically fetch new stories.</li>
 	</ol>
 </p>
 
 <h3>Revision History</h3>
 <ul>
+	<li>Yankidank - 08/09/2013 - import.php can be left in the module's directory. Fixed Smarty include path.</li>
 	<li>Yankidank - 08/08/2013 - v2.0 Updated for Pligg 2.</li>
 	<li>Yankidank - 3/13/2009 - v0.9 Added scriptaculous to module.</li>
 	<li>Yankidank - 2/11/2009 - v0.8 Fixes for images and template locations.</li>

@@ -1,7 +1,7 @@
 <?php
 	$module_info['name'] = 'RSS Importer';
 	$module_info['desc'] = 'Import RSS Feeds as Posts';
-	$module_info['version'] = 2.0;
+	$module_info['version'] = 2.1;
 	$module_info['homepage_url'] = 'http://pligg.com/downloads/module/rss-import/';
 	$module_info['update_url'] = 'http://pligg.com/downloads/module/rss-import/version/';
 	$module_info['settings_url'] = '../module.php?module=rss_import';

@@ -6,11 +6,13 @@
 //              http://www.affero.org/oagpl.html 	 
 // AFFERO GENERAL PUBLIC LICENSE is also included in the file called "COPYING".
 
-include_once('internal/Smarty.class.php');
+include_once('../../internal/Smarty.class.php');
 $main_smarty = new Smarty;
+include('../../config.php');
+include(mnminclude.'html1.php');
 
 require('class.rssimport.php'); 
-require_once('modules/rss_import/magpierss/rss_fetch.inc');
+require_once('./magpierss/rss_fetch.inc');
 
 define('MAGPIE_CACHE_DIR', 'cache/');
 
