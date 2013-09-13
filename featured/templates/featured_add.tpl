@@ -1,78 +1,83 @@
 {config_load file=featured_lang_conf}
 <div id="featured">
-	<fieldset>
-		<legend><a href="./module.php?module=featured">{#PLIGG_featured#}</a></legend>
-		<form action="{$featured_URL}&amp;action=addfeatured" method="post" enctype="multipart/form-data">
-			<table cellpadding="0" cellspacing="0">
-				<thead>
-				<tr class="odd">
-					<th colspan="3">{#PLIGG_featured_AddNew#}</th>
-				</tr>
-				</thead>
-				<tbody>
-				{if $msg ne ''}
-					<tr>
-						<td colspan="3" style="padding-top:5px;background:#D5FFD5;border:1px solid #497C49;"><div class="success">{$msg}</div></td>
-					</tr>
-				{/if}
-				{if $err ne ''}
-					<tr>
-						<td colspan="3" style="padding-top:5px;background:#EBC1C1;border:1px solid #991C1C;"><div class="error">{$err}</div></td>
-					</tr>
-				{/if}
-					<tr>
-						<td width="120" style="font-weight:bold">{#PLIGG_featured_ID#}</td>
-						<td><input type="text" id="featured_link_id" name="featured_link_id" /></td>
-						<td rowspan="5" valign="top">
-							<ul>
-								<li>All fields are required.</li>
-								<li>
-									<strong>Featured News ID</strong> is the <em>ID</em> of the news submitted by the users. To know
-									what is the <em>ID</em>, logout first from your Pligg site then point your mouse to the
-									&quot;<strong>Vote</strong>&quot; link - don't click. When pointing your mouse, you can see in the
-									<a href="http://www.jegsworks.com/Lessons/web/basics/statusbar.htm" target="_blank">status bar</a>
-									something like:<br />
-									<strong>javascript:vote(0,<span class="red">3</span>,0,'d5ec594f11a236ffe5857c8160c5b267',10)</strong><br />
-									The second value above ( <em>which is <span class="red"><strong>3</strong></span></em> ) is the News ID.
-								</li>
-								<li>
-									<strong>Story Title</strong>. Insert the title you would like to use for the featured story.
-								</li>
-								<li>
-									<strong>Story Description</strong>. Insert a description for the featured story.
-								</li>
-							</ul>
-						</td>
-					</tr>
-					<tr>
-						<td style="font-weight:bold">{#PLIGG_featured_Title2#}</td>
-						<td><input type="text" id="featured_link_title" name="featured_link_title" style="width:500px"/></td>
-					</tr>
-					<tr>
-						<td valign="top" style="font-weight:bold">{#PLIGG_featured_Description#}</td>
-						<td><textarea id="featured_description" name="featured_description" style="width:500px;height:300px;"></textarea></td>
-					</tr>
-					<tr>
-						<td style="font-weight:bold">{#PLIGG_featured_Status#}?</td>
-						<td>
-							<input type="radio" id="status" name="status" value="Yes" checked="checked" />Yes
-							&nbsp; &nbsp; &nbsp; 
-							<input type="radio" name="status" value="No" />No
-						</td>
-					</tr>
-					<tr>
-						<td>{#PLIGG_Featured_Image#}</td>
-						<td><input type="file" name="image" /></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td><input type="submit" name="submit" value="Add Featured News" /></td>
-					</tr>
-				</tbody>
-			</table>
-		</form>
-		<br />
-		<a href="{$featured_URL}"><img src="{$featured_path}/images/manage.gif" alt="Manage Featured News" /></a>
-	</fieldset>
+
+	<legend><a href="./module.php?module=featured"><i class="icon-circle-arrow-left"></i></a> {#PLIGG_featured#}</legend>
+	<p>{#PLIGG_featured_About#}</p>
+
+	{if $msg ne ''}
+		<div class="alert alert-success">
+			{$msg}
+		</div>
+	{/if}
+	{if $err ne ''}
+		<div class="alert alert-danger">
+			{$err}
+		</div>
+	{/if}
+	
+	<form action="{$featured_URL}&amp;action=addfeatured" method="post" enctype="multipart/form-data" class="form-horizontal" role="form">
+		
+		<div class="form-group">
+			<label for="featured_link_id" class="col-lg-2 control-label">{#PLIGG_featured_ID#}</label>
+			<div class="col-lg-10">
+				<input type="text" class="form-control" id="featured_link_id" name="featured_link_id" />
+				<span class="help-block">The story ID is used to retrieve the URL, vote count, and comment count.<br />
+					You can find the ID by looking at the vote button javascript when hovering over the vote button with your cursor. The status bar should show something similar to: 
+					<span style="font-size:1.0em;" class="label label-success">javascript:vote(1,3,3,'d5ec594f11a236ffe5857c8160c5b267',10)</span><br />
+					The story ID is represented by the second and third number, so in the example above the story ID would be "3".
+				</span>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label for="featured_link_title" class="col-lg-2 control-label">{#PLIGG_featured_Title2#}</label>
+			<div class="col-lg-10">
+				<input type="text" class="form-control" id="featured_link_title" name="featured_link_title" />
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label for="featured_description" class="col-lg-2 control-label">{#PLIGG_featured_Description#}</label>
+			<div class="col-lg-10">
+				<textarea class="form-control" rows="8" id="featured_description" name="featured_description"></textarea>
+			</div>
+		</div>
+		
+		{*
+		<div class="form-group">
+			<label for="status" class="col-lg-2 control-label">{#PLIGG_featured_Status#}</label>
+			<div class="col-lg-10">
+				<input type="radio" id="status" name="status" value="Yes" checked="checked" />{#PLIGG_featured_Yes#}
+				&nbsp; &nbsp;
+				<input type="radio" name="status" value="No" />{#PLIGG_featured_No#}
+				<span class="help-block">Disabling a featured news item will temporarily remove it from public view.</span>
+			</div>
+		</div>
+		*}
+		
+		<div class="form-group">
+			<label for="fileupload" class="col-lg-2 control-label">{#PLIGG_featured_Image#}</label>
+			<div class="col-lg-10">
+				<div class="fileupload fileupload-new" data-provides="fileupload">
+					<div class="fileupload-new thumbnail" style="width: 200px; height: 150px;"><img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" /></div>
+					<div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+					<div>
+						<span class="btn btn-success btn-file"><span class="fileupload-new">{#PLIGG_featured_Select#}</span>
+						<span class="fileupload-exists">{#PLIGG_featured_Change#}</span><input type="file" name="image" /></span>
+						<a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">{#PLIGG_featured_Remove#}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label for="submit" class="col-lg-2 control-label">{#PLIGG_Featured_Submit#}</label>
+			<div class="col-lg-10">
+				<a href="{$featured_URL}" class="btn btn-default">{#PLIGG_featured_Back#}</a>
+				<input type="submit" name="submit" class="btn btn-primary" value="{#PLIGG_featured_AddNew#}" />
+			</div>
+		</div>
+
+	</form>
 </div>
 {config_load file=featured_pligg_lang_conf}

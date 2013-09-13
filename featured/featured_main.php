@@ -10,6 +10,10 @@ function featured_showpage() {
 
 	if($canIhaveAccess == 1) {
 	
+		// breadcrumbs
+		define('modulename', 'featured'); 
+		$main_smarty->assign('modulename', modulename);
+		
 		$action = $_REQUEST['action'];
 
 		switch($action) {
@@ -54,10 +58,10 @@ function featured_showpage() {
 						$err="Featured Description must not be left blank!";
 					}
 					else if($image_name==null) {
-						$err="You must upload a background image for this Featured News!";
+						$err="You must upload an image file to go along with your featured news item!";
 					}
 					else if($image_type['0']!='image') {
-						$err="You must upload an <strong>image file</strong> for the background image.";
+						$err="You must upload an <strong>image file</strong> for the featured image.";
 					}
 
 					if($err) {
@@ -127,7 +131,7 @@ function featured_showpage() {
 					}					
 					else if($image_name!=null) {
 						if($image_type['0']!='image') {
-							$err="You must upload an <strong>image file</strong> for the background image.";
+							$err="You must upload an <strong>image file</strong> as the featured image.";
 						}
 					}
 

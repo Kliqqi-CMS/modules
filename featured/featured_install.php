@@ -1,7 +1,7 @@
 <?php
 	$module_info['name'] = 'Featured';
 	$module_info['desc'] = 'A story manager that lets you embed featured stories.';
-	$module_info['version'] = 1.0;
+	$module_info['version'] = 2.0;
 	$module_info['settings_url'] = '../module.php?module=featured';
 
 	$module_info['db_add_table'][]=array(

@@ -4,51 +4,128 @@
 		{$featured_path}featured.php?id={$featured[fnews].featured_id}
 		{$featured[fnews].link_summary}
 	{/section} 
-*}			
+*}
 
-<div id="headline" class="featured_headline">
-	<img width="75px" height="21px" alt="" src="{$my_pligg_base}/templates/{$the_template}/images/headline.png"/>
+{literal}
+<style type="text/css">
+hr.soften {
+	margin-top:12px;
+	margin-bottom:12px;
+}
+.featured_image {
+	
+}
+.featured_headline {
+	
+}
+.featured_title {
+	font-size:2.0em;
+	font-weight:bold;
+	line-height:1.4em;
+	padding:0;
+	margin:0;
+}
+.featured_meta{
+	font-size:0.8em;
+	margin-bottom:2px;
+}
+.featured_past {
+	
+}
+.image_wrapper {
+	text-align:center;
+}
+.past_image {
+	
+}
+.past_title {
+	font-size:1.1em;
+	font-weight:bold;
+	margin:0 0 2px 0;
+}
+.past_data {
 
+}
+.past_meta {
+	font-size:0.65em;
+	margin:0 0 2px 0;
+}
+.past_description {
+	font-size:0.8em;
+}
+.past_read_more_wrapper {
+	padding-top:20px;
+}
+.past_read_more {
+	font-size:0.8em;
+}
+</style>
+{/literal}
+
+
+<div class="well featured_wrapper">
 	{section name=featured loop=$news max=1 step=-1}
-		<div class="title"><a href="{$featured[featured].link_url}">{$news[featured].featured_link_title}</a></div>
-		<div class="meta">Submitted 
-			{php}
-				$timestamp = $this->_vars['featured'][$this->_sections['featured']['index']]['link_date'];
-				list($year, $month, $day) = split("-", $timestamp);
-				$timestamp = date('F d, Y', mktime(0, 0, 0, $month, $day, $year));
-				echo $timestamp;
-			{/php}
-			| {$featured[featured].link_votes} votes | {$featured[featured].link_comments} comments 
-		</div> 
-		<div style="float:left;margin:0 2px 1px 0;">
-			<a href="{$featured[featured].link_url}"><img style="border:1px solid #ccc;padding:2px;" src="{$my_pligg_base}/modules/featured/phpthumb/phpThumb.php?src={$my_base_url}{$my_pligg_base}%2fmodules%2ffeatured%2ffeatured.php%3fid%3d{$featured[featured].featured_id}&w=300" alt=""></a>
-		</div>
-		<p>{$news[featured].featured_description}</p>
-		<p><a title="Permanent Link to {$news[featured].featured_link_title}" rel="bookmark" href="{$featured[featured].link_url}">Read the full story &raquo;</a></p>
-		<div class="clear;"> </div>
-	{/section}
-</div>
 
-<div id="featured" class="featured_past">
-	<img width="72px" height="17px" alt="" src="{$my_pligg_base}/templates/{$the_template}/images/featured.png" style="width: 72px; height: 17px;"/>
-	{section name=featured loop=$news step=-1 start=-2 max=3}
-		<div class="clearfloat">
-			<a href="{$featured[featured].link_url}" rel="bookmark" title="Permanent Link to {$news[featured].featured_link_title}">
-			<img class="left" src="{$my_pligg_base}/modules/featured/phpthumb/phpThumb.php?src={$my_base_url}{$my_pligg_base}%2fmodules%2ffeatured%2ffeatured.php%3fid%3d{$featured[featured].featured_id}&w=100" alt="">
+		<div class="pull-left col-md-2 image_wrapper">
+			<a href="{$featured[featured].link_url}">
+				<img width="100%" class="img-thumbnail img-responsive featured_image" src="{$my_base_url}{$my_pligg_base}/{$featured_URL}&amp;action=view_image&amp;id={$news[featured].featured_id}" alt="">
 			</a>
-			<div class="info">
-				<a class="title" href="{$featured[featured].link_url}">{$news[featured].featured_link_title}</a>
-				<div class="meta">Submitted 
+		</div>
+		
+		<div class="pull-left col-md-10 featured_headline" id="headline">
+			<h3 class="featured_title"><a href="{$featured[featured].link_url}">{$news[featured].featured_link_title}</a></h3>
+			<div class="featured_meta"> 
+				<i class="icon-calendar"></i>
+				{php}
+					$timestamp = $this->_vars['featured'][$this->_sections['featured']['index']]['link_date'];
+					list($year, $month, $day) = preg_split("/-/", $timestamp);
+					$timestamp = date('F d, Y', mktime(0, 0, 0, $month, $day, $year));
+					echo $timestamp;
+				{/php}
+				| {$featured[featured].link_votes} 
+				<i class="icon-thumbs-up"></i>  
+				| {$featured[featured].link_comments} 
+				<i class="icon-comments"></i>  
+			</div>
+			<div class="featured_description">
+				<p>{$news[featured].featured_description}</p>
+				<p><a class="btn btn-success" title="Permanent Link to {$news[featured].featured_link_title}" href="{$featured[featured].link_url}">Read the full story &raquo;</a></p>
+			</div>
+		</div>
+		
+	{/section}
+	
+	<div class="clearfix"></div>
+	
+	{section name=featured loop=$news step=-1 start=-2 max=3}
+		<hr class="soften" />
+		<div class="featured_past">
+			<div class="pull-left col-md-2 image_wrapper">
+				<a href="{$featured[featured].link_url}" rel="bookmark" title="Permanent Link to {$news[featured].featured_link_title}">
+					<img width="60%" class="img-thumbnail img-responseive past_image" src="{$my_base_url}{$my_pligg_base}/{$featured_URL}&amp;action=view_image&amp;id={$news[featured].featured_id}" alt="">
+				</a>
+			</div>
+			<div class="pull-left col-md-8 past_data">
+				<h5 class="past_title"><a href="{$featured[featured].link_url}">{$news[featured].featured_link_title}</a></h5>
+				<div class="past_meta"> <i class="icon-calendar"></i>
 					{php}
 						$timestamp = $this->_vars['featured'][$this->_sections['featured']['index']]['link_date'];
-						list($year, $month, $day) = split("-", $timestamp);
+						list($year, $month, $day) = preg_split("/-/", $timestamp);
 						$timestamp = date('M d, Y', mktime(0, 0, 0, $month, $day, $year));
 						echo $timestamp;
 					{/php}
-					| {$featured[featured].link_votes} votes
-				<p>{$news[featured].featured_description|substr:0:125}...</p>
+					| {$featured[featured].link_votes} <i class="icon-thumbs-up"></i>  | {$featured[featured].link_comments} <i class="icon-comments"></i> 
 				</div> 
+				<div class="past_description">
+					<p>{$news[featured].featured_description|substr:0:200}...</p>
+				</div>
 			</div>
+			<div class="pull-left col-md-2 past_read_more_wrapper">
+				<a class="btn btn-default btn-sm past_read_more" href="{$featured[featured].link_url}">Read More</a>
+			</div>
+			<div class="clearfix"></div>
 		</div>
 	{/section}
+	
+	<div class="clearfix"></div>
 </div>
