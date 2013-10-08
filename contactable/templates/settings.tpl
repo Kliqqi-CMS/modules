@@ -26,6 +26,10 @@
 		</div><!-- /input-group -->
 	</div>
 </form>
+<div class="clearfix"></div>
+<hr />
+
+<p>If you want to edit the form labels, either edit the module's language file (/modules/contactable/lang.conf) or <a href="/module.php?module=admin_language#contactable">edit the file using the "Modify Language" module</a> for Pligg.</p>
 
 {config_load file=contactable_pligg_lang_conf}
 <!--/settings.tpl -->
