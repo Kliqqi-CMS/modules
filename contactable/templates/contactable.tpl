@@ -16,15 +16,17 @@
 				{
 					subject: 'feedback URL:'+location.href,
 					url: '{/literal}{$my_pligg_base}{literal}/modules/contactable/mail.php',
-					name: 'Name',
-					email: 'Email',
-					dropdownTitle: 'Issue',
-					dropdownOptions: ['General', 'Website bug', 'Feature request'],
-					message : 'Message',
-					submit : 'SEND',
-					recievedMsg : 'Thank you for your message',
-					notRecievedMsg : 'Sorry but your message could not be sent, try again later',
-					disclaimer: 'Please feel free to get in touch, we value your feedback',
+					{/literal}
+					name: '{#Contactable_Name#}',
+					email: '{#Contactable_Email#}',
+					dropdownTitle: '{#Contactable_Concerning#}',
+					dropdownOptions: [{#Contactable_Topics#}],
+					message : '{#Contactable_Message#}',
+					submit : '{#Contactable_Form_Submit#}',
+					recievedMsg : '{#Contactable_Received#}',
+					notRecievedMsg : '{#Contactable_Not_Received#}',
+					disclaimer: '{#Contactable_Disclaimer#}',
+					{literal}
 					hideOnSubmit: true
 				});
 			});

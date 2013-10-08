@@ -24,7 +24,7 @@
 	background-color:#333333;
 	border:2px solid #FFFFFF;
 	color:#FFFFFF;
-/*	height:450px; */
+	height:450px;
 	left:0;
 	margin-left:-400px;
 	*margin-left:-434px;
@@ -33,13 +33,10 @@
 	padding-left:30px;
 	position:fixed;
 	top:200px;
-	width:360px;
-	*width:394px;
+	width:394px;
 	z-index:99;
 }
-#contactable-contactForm label {
-	color:#FFFFFF;
-}
+
 form#contactable-contactForm input,
 form#contactable-contactForm textarea,
 form#contactable-contactForm select {
@@ -83,10 +80,10 @@ form#contactable-contactForm .contactable-disclaimer {
 	width:100%;
 	z-index:0;
 } 
-.contactable-invalid { background-color: #FBDCDC; }
-#contactable-name.contactable-invalid { background-color: #FBDCDC; } 
-#contactable-email.contactable-invalid { background-color: #FBDCDC; }
-#contactable-message.contactable-invalid { background-color: #FBDCDC; }
+.contactable-invalid { background-color: #EDBE9C; }
+#contactable-name.contactable-invalid { background-color: #EDBE9C; } 
+#contactable-email.contactable-invalid { background-color: #EDBE9C; }
+#contactable-message.contactable-invalid { background-color: #EDBE9C; }
 
 form#contactable-contactForm label{
 	*margin-left:20px;
