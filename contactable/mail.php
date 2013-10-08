@@ -2,9 +2,7 @@
 
 	global $db, $main_smarty, $the_template;
 		
-	include_once('config.php');
-	include_once(mnminclude.'html1.php');
-	include_once(mnminclude.'smartyvariables.php');
+	include_once('../../config.php');
 	
 	$contactable_mail = get_misc_data('contactable_mail'); // Assign contact email
 
